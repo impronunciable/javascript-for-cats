@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>JavaScript for Cats</title>
+    <title>JavaScript para Gatos</title>
 
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/rainbow.github.css">
@@ -26,7 +26,7 @@
 <p><span class="bigTitle">JavaScript Para Gatos</span></p>
 <h2 id="una-introducci-n-para-nuevos-programadores-span-class-right-cat-images-substack-cats-png-span-">Una introducción para nuevos programadores <span class="right"><img src="images/substack-cats.png" alt="cat"></span></h2>
 <h3 id="-tan-simple-que-hasta-tu-amigo-humano-puede-tambi-n-hacerlo-"><em>Tan simple que hasta tu amigo humano puede también hacerlo!</em></h3>
-<p>JavaScript es un lenguaje de programación o, en otras palabras, un medio por el cual la computadora es instruída para hacer cosas. Así como cualquiera de nosotros controlamos a los humanos con silbidos y maullidos, uno puede controlar computadoras con enunciados escritos en un lenguaje de programación. Todos los navegadores web entienden JavaScript y vos podés tomar ventaja de eso para hacer que las páginas web hagan cosas locas!</p>
+<p>JavaScript es un lenguaje de programación o, en otras palabras, un medio por el cual la computadora es instruída para hacer cosas. Así como cualquiera de nosotros controlamos a los humanos con silbidos y maullidos, uno puede controlar computadoras con enunciados escritos en un lenguaje de programación. Todos los navegadores web entienden JavaScript y tu puedes tomar ventaja de eso para hacer que las páginas web hagan cosas locas!</p>
 <p>JavaScript empezó como una manera de hacer páginas web más interactivas. Hoy en día JavaScript corre no solo en navegadores &mdash; también corre en servidores web, teléfonos y hasta robots! Esta página te va a enseñar una base de JavaScript para que puedas arrancar instantáneamente*.</p>
 <p>* <em>Tiempo real del tutorial: Más que instantáneo. Probablemente una hora o dos. Además como sos un gato te debe gustar más estar tirado al sol que corriendo.</em></p>
 <h2 id="tabla-de-contenidos">Tabla de contenidos</h2>
@@ -46,63 +46,63 @@
 </ul>
 <h2 id="no-seas-un-gato-miedoso">No seas un gato miedoso</h2>
 <p><span class="right"><img src="images/yarnify.png" alt="cat"></span></p>
-<p>Siempre vas a caer de pie &mdash; incluso programando! A diferencia de <a href="images/dealwithit.gif">patear un vaso de agua</a> sobre tu laptop, noy hay <em>nada</em> en estos tutoriales que vaya a dañar tu computadora de ninguna manera, incluso si escribís mal un comando o hacés click en un botón equivocado. Como los gatos, los programadores cometen errores todo el tiempo: errores de tipeo,  olvido de cierre de comillas o llaves, y ser olvidadizos acerca de como funcionan algunas funciones básicas. Los programadores se preocupan más por hacer las cosas andar <em>eventualmente</em> en vez de tratar de hacer las cosas funcionar la primera vez que se escriben. La mejor forma de aprender es cometiendo errores!</p>
-<p>Es por eso que no tenés que ser un gato miedoso! La peor cosa que puede pasar es que tengas que refrescar esta página en tu navegador web si estás atascado. Tampoco te preocupes, esto pasa muy rara vez.</p>
+<p>Siempre vas a caer de pie &mdash; incluso programando! A diferencia de <a href="images/dealwithit.gif">patear un vaso de agua</a> sobre tu laptop, no hay <em>nada</em> en estos tutoriales que vaya a dañar tu computadora de ninguna manera, incluso si escribes mal un comando o haces click en un botón equivocado. Como los gatos, los programadores cometen errores todo el tiempo: errores de escritura,  olvido de cierre de comillas o llaves, y ser olvidadizos acerca de como funcionan algunas funciones básicas. Los programadores se preocupan más por hacer las cosas funcionar <em>eventualmente</em> en vez de tratar de hacerlas funcionar la primera vez que se escriben. La mejor forma de aprender es cometiendo errores!</p>
+<p>Es por eso que no tienes que ser un gato miedoso! La peor cosa que puede pasar es que tengas que refrescar esta página en tu navegador web si estás atascado. Tampoco te preocupes, esto pasa muy rara vez.</p>
 <h2 id="-a-id-basics-href-basics-a-la-base"><a id="basics" href="#basics">#</a> La base</h2>
-<p>Hay JavaScript corriendo en esta página en este momento. Juguemos un poco con eso. Por simplicidad voy a asumir que estás usando Google Chrome para leer esta página (si no es así va a ser probablemente más fácil para los dos si seguís el tutorial usando Chrome).</p>
-<p>Primero, hacé click derecho en cualquier parte de la pantalla y apretá en <strong>Inspeccionar elemento</strong> (o <strong>Inspect element</strong> en inglés), después click en el tab que dice <strong>Console</strong>. Deberías ver una cosa que se parece a esto:</p>
+<p>Hay JavaScript corriendo en esta página en este momento. Juguemos un poco con eso. Por simplicidad voy a asumir que estás usando Google Chrome para leer esta página (si no es así va a ser probablemente más fácil para los dos si sigues el tutorial usando Chrome).</p>
+<p>Primero, haz click derecho en cualquier parte de la pantalla y selecciona <strong>Inspeccionar elemento</strong> (o <strong>Inspect element</strong> en inglés), después click en el tab que dice <strong>Console</strong>. Deberías ver una cosa que se parece a esto:</p>
 <p><img src="images/console.gif" alt="consola"></p>
-<p>Esta es una consola, también llamada &quot;línea de comando&quot; o &quot;terminal&quot;. Básicamente es una forma de tipear una cosa a la vez en la computadora e inmediatamente obtener la respuesta. Existen herramientas de aprendizaje súper útiles (Yo todavía uso la consola casi todos los días que escribo código).</p>
-<p>La consola hace algunas cosas realmente geniales. Comencé tipeando algo y la consola está ayudandome dandome una lista de todas las posibles cosas que puedo continuar tipeando! Otra cosa que podés hacer es tipear <code>1 + 1</code> en la consola y después apretar <code>Enter</code> y ver que pasa.</p>
-<p>Usar la consola es una parte importante a la hora de aprender JavaScript. Si no sabés como funciona algo o que comando sirve para qué, podés ir a la consola y averiguarlo! El siguiente es un ejemplo:</p>
+<p>Esta es una consola, también llamada &quot;línea de comando&quot; o &quot;terminal&quot;. Básicamente es una forma de escribir una cosa a la vez en la computadora e inmediatamente obtener la respuesta. Existen herramientas de aprendizaje súper útiles (Yo todavía uso la consola casi todos los días que escribo código).</p>
+<p>La consola hace algunas cosas realmente geniales. Comencé escribiendo algo y la consola está ayudandome dandome una lista de todas las posibles cosas que puedo continuar escribiendo! Otra cosa que puedes hacer es escribir <code>1 + 1</code> en la consola y después apretar <code>Enter</code> y ver que pasa.</p>
+<p>Usar la consola es una parte importante a la hora de aprender JavaScript. Si no sabes como funciona algo o que comando sirve para qué, puedes ir a la consola y averiguarlo! El siguiente es un ejemplo:</p>
 <h3 id="-a-id-strings-href-strings-a-strings"><a id="strings" href="#strings">#</a> Strings</h3>
 <p>Como soy un gato quiero reemplazar cada instancia de la palabra <code>perro</code> en la Internet con <code>esos malditos perros</code>. Primero voy a la consola y escribo unas pocas sentencias que contienen la palabra <code>perro</code> al menos una vez. En JavaScript un conjunto de letras, números, palabras o cualquier otra cosa es conocido como un <strong>String</strong> (o cadena de caracteres). Los strings deben empezar y terminar con una comilla. Da igual usar comilla simple <code>&#39;</code> o doble <code>&quot;</code>, siempre y cuando uses el mismo símbolo al principio y al final.</p>
 <p><img src="images/console-strings.gif" alt="consola"></p>
 <p>Ves el horrible mensaje de error? No te preocupes - no rompiste ninguna ley. <code>Syntax Error ILLEGAL</code> es como suena cuando un robot te quiere decir que tu programa tiene un problema. Las primeras dos sentencias coinciden con el tipo de comilla usado al comienzo y final de la sentencia pero cuando los mezclamos la computadora enloquece, es como mezclar sandía con vino.</p>
-<p>Ok, para arreglar una de esas sentencias (reemplazando <code>perro</code> por nuestra versión mejorada) tenemos que primero salvar la sentencia original para poder llamarla de nuevo cuando hagamos nuestra magia de reemplazo. Ves como el string se repite en rojo cuando tipeo en la consola? Esto es porque no dijimos que se guarde la sentencia en ningún lado y por eso no las devuelve (O nos da un error cuando cometemos algún error).</p>
+<p>Ok, para arreglar una de esas sentencias (reemplazando <code>perro</code> por nuestra versión mejorada) tenemos que primero guardar la sentencia original para poder llamarla de nuevo cuando hagamos nuestra magia de reemplazo. Ves como el string se repite en rojo cuando escribo en la consola? Esto es porque no dijimos que se guarde la sentencia en ningún lado y por eso no las devuelve (O nos da un error cuando cometemos algún error).</p>
 <h3 id="-a-id-values-href-values-a-valores-y-variables"><a id="values" href="#values">#</a> Valores y variables</h3>
 <p>Los <strong>valores</strong> son los componentes más simples en JavaScript. <code>1</code> es un valor, <code>true</code> (que representa un valor lógico de verdad) es un valor, <code>&quot;hola&quot;</code> es un valor, <code>function() {}</code> es un valor, la lista sigue! Existen muchos <strong>tipos</strong> de valores en JavaScript pero no necesitamos conocerlos todos ahora &mdash; los vas a aprender naturalmente mientras más código escribas!</p>
-<p>Para guardar valores usamos pendorchos llamados <strong>variables</strong>. La palabra &#39;variable&#39; significa &#39;puede cambiar&#39; y es usado porque las variables pueden guardar distintos tipos de valores y cambiar su valor muchas veces. Las variables son bastante parecidas a un buzón. Ponemos algo en una variable, como una sentencia, y después le damos a la variable una dirección que puede usar para ir a buscar esa sentencia más tarde. En la vida real los buzones necesitan números de código postal pero en JavaScript usualmente se reemplazan con letras en minúscula o números sin espacios.</p>
+<p>Para guardar valores usamos cosas llamadas <strong>variables</strong>. La palabra &#39;variable&#39; significa &#39;puede cambiar&#39; y es usado porque las variables pueden guardar distintos tipos de valores y cambiar su valor muchas veces. Las variables son bastante parecidas a un buzón. Ponemos algo en una variable, como una sentencia, y después le damos a la variable una dirección que puede usar para ir a buscar esa sentencia más tarde. En la vida real los buzones necesitan números de código postal pero en JavaScript usualmente se reemplazan con letras en minúscula o números sin espacios.</p>
 <p><img src="images/console-variables.gif" alt="consola"></p>
-<p><code>var</code> es una abreviatura de variable y el símbolo <code>=</code> significa <em>guardá la cosa del lado derecho en la cosa del lado izquierdo</em>. Además como podés ver, ahora que estamos guardando nuestra sentencia en una variable la consola no devuelve la sentencia, sino que nos da <code>undefined</code> como respuesta, lo que significa <em>no hay nada para devolver</em>.</p>
-<p>Si simplemente tipeas el nombre de una variable en la consola va a imprimir el valor guardado en esa variable. Una nota sobre las variables es que por defecto se pierden cuando cambiás a una página diferente. Si fuera a refrescar la página en Chrome, por ejemplo, mi variable <code>sentenciaPerro</code> desaparecería para siempre, como si nunca hubiera existido. Pero no te preocupes por esto demasiado &mdash; podés apretar las flechas para arriba y abajo en el teclado cuando estás en la consola y obtener las sentencias que fuiste escribiendo últimamente.</p>
+<p><code>var</code> es una abreviatura de variable y el símbolo <code>=</code> significa <em>guarda la cosa del lado derecho en la cosa del lado izquierdo</em>. Además como puedes ver, ahora que estamos guardando nuestra sentencia en una variable la consola no devuelve la sentencia, sino que nos da <code>undefined</code> como respuesta, lo que significa <em>no hay nada para devolver</em>.</p>
+<p>Si simplemente escribes el nombre de una variable en la consola va a imprimir el valor guardado en esa variable. Una nota sobre las variables es que por defecto se pierden cuando cambias a una página diferente. Si fuera a refrescar la página en Chrome, por ejemplo, mi variable <code>sentenciaPerro</code> desaparecería para siempre, como si nunca hubiera existido. Pero no te preocupes por esto demasiado &mdash; puedes apretar las flechas para arriba y abajo en el teclado cuando estás en la consola y obtener las sentencias que fuiste escribiendo últimamente.</p>
 <h3 id="-a-id-functions-href-functions-a-usando-funciones"><a id="functions" href="#functions">#</a> Usando funciones</h3>
 <p>Ahora que tenemos nuestra sentencia guardada en una variable, vamos a cambiar la palabra guardada en ella! Podemos hacer esto creando una <em>función</em>. Las <em>funciones</em> son un tipo de valor que realiza justamente una <em>función</em> específica (También conocido como propósito o acción) por nosotros. Llamarlas &quot;acciones&quot; suena extraño y supongo que por eso eligieron &quot;función&quot; en su lugar.</p>
 <p>JavaScript tiene una función llamada <code>replace</code> (reemplazar en inglés) que hace exactamente lo que queremos! Las funciones toman valores en sus paréntesis (cero, uno o más) y devuelve o bien nada (<code>undefined</code>) o el string modificado. La función <code>replace</code> está disponible para usar sobre cualquier string y toma 2 valores: los caracteres que queremos sacar y los caracteres que los van a reemplazar. Se torna un poco confuso describir estas cosas así que acá tenemos un ejemplo visual:</p>
 <p><img src="images/console-replace.gif" alt="consola"></p>
 <p>Notas como el valor de <code>sentenciaPerro</code> es el mismo incluso después de correr <code>replace</code> sobre él? Esto se debe a que la función <code>replace</code>, (y la mayoría de funciones de JavaScript para estos propósitos) toman el valor que le damos y retornan un <strong>nuevo valor</strong>, sin modificar el valor que le pasamos. Como no queremos guardar el resultado (no hay <code>=</code> en el lado izquierdo de la operación de reemplazo) se imprime el valor retornado en la consola.</p>
 <h3 id="-a-id-standard-library-href-standard-library-a-funciones-del-lenguaje"><a id="standard-library" href="#standard-library">#</a> Funciones del lenguaje</h3>
-<p>Te debés estar preguntando que otras funciones están disponibles en JavaScript. La respuesta: UN MONTON. Hay muchas <strong>bibliotecas estándar integradas</strong> de las cuales podés aprender en MDN (Un sitio de Mozilla que tiene mucha y muy buena información sobre tecnologías web). Por ejemplo <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Math">acá está la página de MDN sobre las funciones relativas a la matemática de JavaScript</a>.</p>
+<p>Te debes estar preguntando que otras funciones están disponibles en JavaScript. La respuesta: UN MONTON. Hay muchas <strong>bibliotecas estándar integradas</strong> de las cuales puedes aprender en MDN (Un sitio de Mozilla que tiene mucha y muy buena información sobre tecnologías web). Por ejemplo <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Math">acá está la página de MDN sobre las funciones relativas a la matemática de JavaScript</a>.</p>
 <h3 id="-a-id-third-party-javascript-href-third-party-javascript-a-c-digo-de-terceros"><a id="third-party-javascript" href="#third-party-javascript">#</a> Código de terceros</h3>
-<p>También existe un montón de código JavaScript disponible que no forma parte de la <strong>biblioteca estándar</strong>. Se suele referir al JavaScript escrito por tercero como una &quot;biblioteca&quot; o &quot;plugin&quot;. Uno de mis favoritos se llama <strong>Underscore.js</strong>. Vayamos a buscarlo y cargarlo en nuestra página! Primero andá al sitio de Underscore, <a href="http://underscorejs.org/">http://underscorejs.org/</a>, hacé click en el link de descarga (En general uso la versión de desarrollo porque son fáciles de leer pero cualquiera de las 2 te va a dar la misma funcionalidad), y copiá todo el código en tu portapapeles (podés usar <strong>Seleccionar todo</strong> haciendo click derecho). Después pegalo en tu consola y apretá enter. Ahora tu navegador tiene una nueva variable: <code>_</code>. Underscore te da una gran cantidad de funciones útiles para jugar. Vamos a aprender a usarlas más adelante.</p>
+<p>También existe un montón de código JavaScript disponible que no forma parte de la <strong>biblioteca estándar</strong>. Se suele referir al JavaScript escrito por tercero como una &quot;biblioteca&quot; o &quot;plugin&quot;. Uno de mis favoritos se llama <strong>Underscore.js</strong>. Vayamos a buscarlo y cargarlo en nuestra página! Primero ve al sitio de Underscore, <a href="http://underscorejs.org/">http://underscorejs.org/</a>, haz click en el link de descarga (En general uso la versión de desarrollo porque son fáciles de leer pero cualquiera de las 2 te va a dar la misma funcionalidad), y copia todo el código en tu portapapeles (puedes usar <strong>Seleccionar todo</strong> haciendo click derecho). Después pegalo en tu consola y apretá enter. Ahora tu navegador tiene una nueva variable: <code>_</code>. Underscore te da una gran cantidad de funciones útiles para jugar. Vamos a aprender a usarlas más adelante.</p>
 <p><img src="images/underscore.gif" alt="console"></p>
 <h3 id="-a-id-writing-functions-href-writing-functions-a-creando-nuevas-funciones"><a id="writing-functions" href="#writing-functions">#</a> Creando nuevas funciones</h3>
-<p>No estás limitado a usar funciones de otros &mdash; podés también escribirlas vos. Es muy simple! Hagamos una función llamada <code>ponerleOnda</code> que agregue unos puntos de exclamación al final de un string.</p>
+<p>No estás limitado a usar funciones de otros &mdash; puedes también escribirlas vos. Es muy simple! Hagamos una función llamada <code>ponerleOnda</code> que agregue unos puntos de exclamación al final de un string.</p>
 <pre><code>function ponerleOnda(string) {
   return string + &#39;!!!!&#39;
 }
 </code></pre><p>En mi cabeza lo leo en voz alta como: &quot;hay una función llamada &#39;ponerle onda&#39; que toma un string y devuelve una nueva copia del string que tiene algunos puntos de exclamación al final&quot;. Así es como escribo esto en la consola manualmente sin escribir la función:</p>
 <p><img src="images/custom-function-manually.gif" alt="console"></p>
 <p>La expresión <code>string + !!!!</code> devuelve un nuevo string y nuestra variable llamada <code>string</code> queda igual que antes (ya que nunca la actualizamos usando <code>=</code>).</p>
-<p>Usemos nuestra función en vez de hacerlo manualmente. Primero, peg´å la función en la consola y después <strong>llamá</strong> a la función <strong>pasandole</strong> un string:</p>
+<p>Usemos nuestra función en vez de hacerlo manualmente. Primero, pega la función en la consola y después <strong>llama</strong> a la función <strong>pasandole</strong> un string:</p>
 <p><img src="images/custom-function-call.gif" alt="console"></p>
-<p>Podés también llamar a la misma función pasandole una variable que apunta a un string (en el ejemplo de arriba tipeamos el string directo como un valor en vez de guardarlo como una variable primero):</p>
+<p>Puedes también llamar a la misma función pasandole una variable que apunta a un string (en el ejemplo de arriba escribimos el string directo como un valor en vez de guardarlo como una variable primero):</p>
 <p><img src="images/custom-function-call-variable.gif" alt="console"></p>
-<p>La linea <code>ponerleOnda(sentencia)</code> es equivalente a decir <code>sentencia + &#39;!!!!&#39;</code>. Que pasa si queremos <strong>modificar en el lugar</strong> (conocido como actualizar)  el valor de sentencia? Simplemente guardá el valor de retorno de la función en la variable <code>sentencia</code>:   </p>
+<p>La linea <code>ponerleOnda(sentencia)</code> es equivalente a decir <code>sentencia + &#39;!!!!&#39;</code>. Que pasa si queremos <strong>modificar en el lugar</strong> (conocido como actualizar) el valor de sentencia? Simplemente guarda el valor de retorno de la función en la variable <code>sentencia</code>:</p>
 <pre><code>var sentencia = &quot;hora de la siesta&quot;
 sentencia = ponerleOnda(sentencia)
-</code></pre><p>Ahora <code>sentencia</code> va a tener el signo de exclamación al final! Notá que vos solo usaste <code>var</code> cuando <strong>inicializaste</strong> la variable &mdash; la primera vez que la usaste. Después no deberías usar <code>var</code> a menos que quieras re-inicializar (resetear/limpiar/vaciar) la variable.</p>
+</code></pre><p>Ahora <code>sentencia</code> va a tener los signos de exclamación al final! Date cuenta que vos solo usaste <code>var</code> cuando <strong>inicializaste</strong> la variable &mdash; la primera vez que la usaste. Después no deberías usar <code>var</code> a menos que quieras re-inicializar (resetear/limpiar/vaciar) la variable.</p>
 <p>Que pasa si sacamos el <code>return</code> de la función?</p>
 <p><img src="images/custom-function-no-return.gif" alt="console"></p>
-<p>Por qué <code>sentencia</code> está vacía? Porque las funciones devuelven <code>undefined</code> por defecto! Podés elegir devolver cualquier valor usando <code>return</code>. Las funciones deben tomar un valor y, si cambian el valor o crean uno nuevo que se va a usar más tarde, <code>devuelven</code> un valor (curiosidad: un término cool para este estilo es <em>programación funcional</em>). Acá tenemos otra función que no devuelve ningún valor pero en cambio usa un método diferente para mostrarnos el resultado:</p>
+<p>Por qué <code>sentencia</code> está vacía? Porque las funciones devuelven <code>undefined</code> por defecto! puedes elegir devolver cualquier valor usando <code>return</code>. Las funciones deben tomar un valor y, si cambian el valor o crean uno nuevo que se va a usar más tarde, <code>devuelven</code> un valor (curiosidad: un término cool para este estilo es <em>programación funcional</em>). Acá tenemos otra función que no devuelve ningún valor pero en cambio usa un método diferente para mostrarnos el resultado:</p>
 <pre><code class="lang-js">function gritalo(string) {
   string = string.toUpperCase()
   string = ponerleOnda(string)
   console.log(string)
 }
 </code></pre>
-<p>Esta función, <code>gritalo</code>, usa nuestra función <code>ponerleOnda</code> y el método built-in de String <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/toUpperCase">toUpperCase</a>. Los métodos son solo un nombre para una función cuando pertenece a algo &mdash; en este caso <code>toUpperCase</code> es una función que pertenece a <code>String</code> entonces decimos que es un método <em>o</em> una función. <code>ponerleOnda</code> en cambio no pertenece a nadie entonces sería tecnicamente incorrecto referirse a ella como un método (es confuso, lo se).</p>
-<p>La última linea de la función es otra función built-in que simplemente toma valores que le das y los imprime en la consola.</p>
+<p>Esta función, <code>gritalo</code>, usa nuestra función <code>ponerleOnda</code> y el método nativo de String <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/toUpperCase">toUpperCase</a>. Los métodos son solo un nombre para una función cuando pertenece a algo &mdash; en este caso <code>toUpperCase</code> es una función que pertenece a <code>String</code> entonces decimos que es un método <em>o</em> una función. <code>ponerleOnda</code> en cambio no pertenece a nadie entonces sería tecnicamente incorrecto referirse a ella como un método (es confuso, lo se).</p>
+<p>La última linea de la función es otra función nativa que simplemente toma valores que le das y los imprime en la consola.</p>
 <p><img src="images/custom-function-console-log.gif" alt="console"></p>
 <p>Entonces hay algo mal con esta función <code>gritalo</code>? Depende! Hay 2 tipos principales de funciones:</p>
 <ul>
@@ -119,8 +119,8 @@ console.log(gritalo(&quot;no le temo a los humanos&quot;))
 </code></pre>
 <p>De este modo <code>gritalo</code> se vuelve más <strong>genérica</strong>, es decir que hace una o dos cosas simples y no sabe nada sobre imprimir a la consola &mdash; esa parte siempre puede ser programada después, afuera de la definición de la función.</p>
 <h3 id="-a-id-loops-href-loops-a-ciclos"><a id="loops" href="#loops">#</a> Ciclos</h3>
-<p>Ahora que tenemos skills básicos en nuestro cinturón (<em>Nota del autor: acaso los gatos usan cinturones?</em>) podemos empezar a ser vagos. Como?! Sí, así es: Programar se trata de ser vago. Larry Wall, inventor del lenguaje de programación Perl, llamaba a la vagancia <a href="http://c2.com/cgi/wiki?LazinessImpatienceHubris">la mayor virtud</a> de un buen programador. Si las computadoras no existiesen tendrías que hacer todo tipo de tareas tediosas a mano, pero si aprendés a programar podés tirarte al sol todo el día mientras una computadora en algún lado corre los programas por vos. Es un estilo de vida glorioso lleno de relax!</p>
-<p>Los ciclos son una de las formas más importantes de exprimir el poder de la computadora. Recordás <code>Underscore.js</code> de hace un rato? Estate seguro de haberlo cargado en la página (recordá: siempre podés usar la flechita para arriba un par de veces y apretar <code>Enter</code> para cargarlo de nuevo si lo necesitás) y tratá de copiar y pegar esto en la consola:</p>
+<p>Ahora que tenemos skills básicos en nuestro cinturón (<em>Nota del autor: acaso los gatos usan cinturones?</em>) podemos empezar a ser vagos. Como?! Sí, así es: Programar se trata de ser vago. Larry Wall, inventor del lenguaje de programación Perl, llamaba a la vagancia <a href="http://c2.com/cgi/wiki?LazinessImpatienceHubris">la mayor virtud</a> de un buen programador. Si las computadoras no existiesen tendrías que hacer todo tipo de tareas tediosas a mano, pero si aprendes a programar puedes tirarte al sol todo el día mientras una computadora en algún lado corre los programas por vos. Es un estilo de vida glorioso lleno de relax!</p>
+<p>Los ciclos son una de las formas más importantes de exprimir el poder de la computadora. Recuerdas <code>Underscore.js</code> de hace un rato? Asegúrate de haberlo cargado en la página (recuerda: siempre puedes usar la flechita para arriba un par de veces y apretar <code>Enter</code> para cargarlo de nuevo si lo necesitas) y trata de copiar y pegar esto en la consola:</p>
 <pre><code class="lang-js">function imprimirNumero(unNumero) {
   console.log(unNumero)
 }
@@ -140,46 +140,46 @@ imprimirNumero(7)
 imprimirNumero(8)
 imprimirNumero(9)
 </code></pre>
-<p>Pero los gatos rechazan hacer trabajo manual innecesario como ese, entonces siempre debemos preguntarnos, <em>&quot;estos haciendo esto del modo más vago posible?&quot;</em></p>
+<p>Pero los gatos rechazan hacer trabajo manual innecesario como ese, entonces siempre debemos preguntarnos, <em>&quot;estamos haciendo esto del modo más vago posible?&quot;</em></p>
 <p>Entonces por qué se llama esto ciclado? Pensalo de esta manera: Si tuvieramos que escribir una lista de 10 números (de 0 a 9) usango un Array de JavaScript se vería como esto:</p>
 <pre><code class="lang-js">var ceroADiez = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 </code></pre>
 <p>Lo que <code>times</code> realmente hace es visitar cada número y repetir la tarea: en el ejemplo de arriba la tarea era llamar a la función <code>imprimirNumero</code> con el número actual. Repetir tareas de ese modo se llama <em>ciclar sobre</em> el Array.</p>
 <h3 id="-a-id-arrays-href-arrays-a-arrays"><a id="arrays" href="#arrays">#</a> Arrays</h3>
-<p>Los mencioné unas cuantas veces pero pasemos un minuto aprendiendo sobre ellos. Imaginá que necesitás hacer un seguimiento de tus amigos. Bueno, un Array lo va a hacer bien. Pensá a un Array como una lista ordenada donde podés mantener <strong>una gran cantidad</strong> de cosas adentro.</p>
-<p>Así es como hacés uno:</p>
+<p>Los mencioné unas cuantas veces pero pasemos un minuto aprendiendo sobre ellos. Imagina que necesitas hacer un seguimiento de tus amigos. Bueno, un Array lo va a hacer bien. Piensa en un Array como una lista ordenada donde puedes mantener <strong>una gran cantidad</strong> de cosas adentro.</p>
+<p>Así es como haces uno:</p>
 <pre><code class="lang-js">var misAmigosGatos = [&quot;felix&quot;, &quot;sessa&quot;, &quot;garfield&quot;]
 </code></pre>
-<p>Genial! Ahora tenés una lista de tus amigos gatos.</p>
-<p>Los elementos (así es como llamás a un item de un array) son guardados en arrays empezando por el 0 y contando para arriba. Entonces <code>misAmigosGatos[0]</code> devuelve <code>felix</code> y <code>misAmigosGatos[1]</code> devuelve <code>sessa</code>... etc etc.</p>
-<p>Para obtener un amigo de tu nuevo Array podés simplemente accederlo directamente así:</p>
+<p>Genial! Ahora tienes una lista de tus amigos gatos.</p>
+<p>Los elementos (así es como llamas a un item de un Array) son guardados en arrays empezando por el 0 y contando para arriba. Entonces <code>misAmigosGatos[0]</code> devuelve <code>felix</code> y <code>misAmigosGatos[1]</code> devuelve <code>sessa</code>... etc etc.</p>
+<p>Para obtener un amigo de tu nuevo array puedes simplemente accederlo directamente así:</p>
 <pre><code class="lang-js">console.log(misAmigosGatos[0])
 </code></pre>
 <p><img src="images/array-access.png" alt="console"></p>
-<p>Si hiciste un nuevo amigo en el club gatuno de moda la otra noche y querés agregarlo a tu lista es super simple: <code>mysAmigosGatos.push(&quot;gato de moda&quot;)</code>.</p>
-<p>Para chequear que el nuevo gato está adentro de tu array podés usar <code>.length</code>:</p>
+<p>Si hiciste un nuevo amigo en el club gatuno de moda la otra noche y quieres agregarlo a tu lista es super simple: <code>mysAmigosGatos.push(&quot;gato de moda&quot;)</code>.</p>
+<p>Para verificar que el nuevo gato está adentro de tu array puedes usar <code>.length</code>:</p>
 <p><img src="images/array-push-length.png" alt="console"></p>
-<p>Notaste que <code>push</code> devolvió el tamaño? Buenisimo! También notá que los arrays siempre <strong>preservan el orden</strong> lo que significa que van a recordar el orden en el que agregaste o definiste las cosas. No todo en JavaScript preserva el orden así que recordá esta propiedad especial de los Arrays!</p>
+<p>Notaste que <code>push</code> devolvió el tamaño? Buenisimo! También toma nota que los arrays siempre <strong>preservan el orden</strong> lo que significa que van a recordar el orden en el que agregaste o definiste las cosas. No todo en JavaScript preserva el orden así que recuerda esta propiedad especial de los Arrays!</p>
 <h3 id="-a-id-objects-href-objects-a-objetos"><a id="objects" href="#objects">#</a> Objetos</h3>
-<p>Los Arrays son buenos para listar, pero para otras tareas puede ser duro trabajar con ellos. Considerá nuestro array de amigos felinos. Qué pasa si querés guardar más que nombres?</p>
+<p>Los Arrays son buenos para listar, pero para otras tareas puede ser duro trabajar con ellos. Considera nuestro array de amigos felinos. Qué pasa si quieres guardar más que nombres?</p>
 <pre><code class="lang-js">var misAmigosGatos = [&quot;felix&quot;, &quot;sessa&quot;, &quot;garfield&quot;]
 var apellidos = [&quot;el gato&quot;, &quot;gato&quot;, &quot;gato&quot;]
 var direcciones = [&quot;La calle&quot;, &quot;Liniers&quot;, &quot;La casa de John Bonachon&quot;]
 </code></pre>
-<p>A veces es bueno tener todas las dierecciones o nombres en una variable. Pero a veces tenés un gato en mente, digamos Felix, y querés buscar su dirección. Con arrays toma todo un trabajo porque no podés decirle &#39;che array, dame la dirección de Felix&#39; porque &#39;Felix&#39; está en un array y su dirección en otro totalmente diferente.</p>
+<p>A veces es bueno tener todas las direcciones o nombres en una variable. Pero a veces tienes un gato en mente, digamos Felix, y querés buscar su dirección. Con arrays toma todo un trabajo porque no puedes decirle &#39;che array, dame la dirección de Felix&#39; porque &#39;Felix&#39; está en un array y su dirección en otro totalmente diferente.</p>
 <p><img src="images/array-lookup.png" alt="console"></p>
 <p>Esto puede ser frágil porque nuestro arrays cambian y agregamos un nuevo gato al comienzo podemos también actualizar la variable <code>posicionDeFelix</code> apuntando a la nueva ubicación de la información de Felix en los arreglos! Acá mostramos una forma más fácil de mantener guardada la información usando objetos:</p>
 <pre><code class="lang-js">var primerGato = { nombre: &quot;felix&quot;, apellido: &quot;el gato&quot;, dirección: &quot;La calle&quot; }
 var segundoGato = { nombre: &quot;sessa&quot;, lastName: &quot;gato&quot;, direccion: &quot;Liniers&quot; }
 var tercerGato = { nombre: &quot;garfield&quot;, apellido: &quot;gato&quot;, direccion: &quot;Casa de John Bonachón&quot; }
 </code></pre>
-<p>Por qué lo haríamos de esta manera? Porque ahora tenemos una variable para cada gato que podemos usar a la hora de obtener valores del gato de una manera más conveniente y legible.  </p>
+<p>Por qué lo haríamos de esta manera? Porque ahora tenemos una variable para cada gato que podemos usar a la hora de obtener valores del gato de una manera más conveniente y legible.</p>
 <p><img src="images/object-lookup.png" alt="console"></p>
-<p>Podés pensar a los Objetos como llaves de un llavero. Cada una es para una puerta en particular y si tenés lindas etiquetas en tus llaves podés abrir puertas muy rápidamente. De hecho, las cosas del lado izquierdo del <code>:</code> son llamadas <strong>claves</strong> (también se conocen como <strong>propiedades</strong>) y las cosas del lado derecho se llaman <strong>valores</strong>.</p>
+<p>Puedes pensar a los Objetos como llaves de un llavero. Cada una es para una puerta en particular y si tienes lindas etiquetas en tus llaves puedes abrir puertas muy rápidamente. De hecho, las cosas del lado izquierdo del <code>:</code> son llamadas <strong>claves</strong> (también se conocen como <strong>propiedades</strong>) y las cosas del lado derecho se llaman <strong>valores</strong>.</p>
 <pre><code class="lang-js">// un objeto con una sola clave llamada &#39;nombre&#39; y un solo valor &#39;felix&#39;
 { nombre: &#39;felix&#39; }
 </code></pre>
-<p>Entonces por qué usar arrays si podemos poner toda nuestra información en objetos? Porque los objetos no recuerdan el orden de las claves que seteas. Podés ingresar un objeto de esta manera:</p>
+<p>Entonces por qué usar arrays si podemos poner toda nuestra información en objetos? Porque los objetos no recuerdan el orden de las claves que seteas. puedes ingresar un objeto de esta manera:</p>
 <pre><code class="lang-js">{ fecha: &quot;20/10/2012&quot;, diario: &quot;hoy dormí un poco&quot;, nombre: &quot;Carlos&quot; }
 </code></pre>
 <p>Pero la computadora puede devolverlo así:</p>
@@ -188,12 +188,12 @@ var tercerGato = { nombre: &quot;garfield&quot;, apellido: &quot;gato&quot;, dir
 <p>O así!</p>
 <pre><code class="lang-js">{ nombre: &quot;Carlos&quot;, diario: &quot;hoy dormí un poco&quot;, fecha: &quot;20/10/2012&quot; }
 </code></pre>
-<p>Por lo tanto no podés confiar en el orden de las claves de los objetos. Si querés hacer algo muy genial podés hacer un array lleno de objetos o un objeto de arrays!</p>
+<p>Por lo tanto no puedes confiar en el orden de las claves de los objetos. Si querés hacer algo muy genial puedes hacer un array lleno de objetos o un objeto de arrays!</p>
 <pre><code class="lang-js">var archivoDeAnimo = [
   {
     fecha: &quot;20/10/2012&quot;,
     estado: &quot;aburrido&quot;
-  }, 
+  },
   {
     fecha: &quot;21/10/2012&quot;,
     estado: &quot;dormido&quot;
@@ -210,16 +210,16 @@ var favoritos = {
   lugaresSiesta: [&quot;sofa&quot;, &quot;jardin&quot;, &quot;pecho de humano&quot;]
 }
 </code></pre>
-<p>Cuando combinás diferentes cosas como esta estás haciendo <strong>estructuras de datos</strong>, como legos!</p>
+<p>Cuando combinas diferentes cosas como esta estás haciendo <strong>estructuras de datos</strong>, como legos!</p>
 <h3 id="-a-id-callbacks-href-callbacks-a-callbacks"><a id="callbacks" href="#callbacks">#</a> Callbacks</h3>
-<p>los Callbacks no son realmente una característica de JavaScript como son los <code>Objetos</code> o los <code>Arrays</code>, sino una manera de usar funciones. Para entender por qué son útiles, primero tenemos que aprender sobre programación asíncrona (también llamada async). El código asíncrono es por definición escrito de una manera que no es síncrona. El código síncrono es fácil de entender y escribir. Este ejemplo lo ilustra:</p>
+<p>Los Callbacks no son realmente una característica de JavaScript como son los <code>Objetos</code> o los <code>Arrays</code>, sino una manera de usar funciones. Para entender por qué son útiles, primero tenemos que aprender sobre programación asíncrona (también llamada async). El código asíncrono es por definición escrito de una manera que no es síncrona. El código síncrono es fácil de entender y escribir. Este ejemplo lo ilustra:</p>
 <pre><code class="lang-js">var foto = descargar(&#39;http://foo-chan.com/images/sp.jpg&#39;)
 subirTweetConFoto(foto, &#39;@maxogden&#39;)
 </code></pre>
 <p>Este <a href="http://simple.wikipedia.org/wiki/Pseudocode">pseudo-código</a> síncrono descarga una foto adorable de un gato, sube la foto a twitter y genera un tweet con la foto para <code>@maxogden</code>. Bastante simple!</p>
 <p>(<em>Nota del autor: Yo, @maxogden, acepto felizmente fotos de gatos por Twitter.</em>)</p>
 <p>Este código es síncrono porque para subir la foto al tweet, la descarga de la foto tiene que ser completada. Esto significa que en la linea 2 no puede correr hasta que la tarea de la linea 1 esté totalmente finalizada. Si fueramos a implementar este pseudo-código queremos estar seguros de que <code>descargar</code> &#39;bloquea&#39; la ejecución hasta que la descarga es finalizada, previniendo que <em>cualquier</em> otro JavaScript sea ejecutado hasta que termine, así cuando la descarga se completa, se desbloquea la ejecución de JavaScript y la linea 2 se ejecuta.</p>
-<p>El código síncrono está bien para cosas que pasan rápido, pero es horrible para cosas que requieren guardar, cargar o descargar. Que pasa si el servidor del que estás bajando la foto es lento, o la conexión a internet que usas es lenta, o la computadora donde corrés el código tiene muchas tabs con videos de gatos en youtube que anda lento? Significa que potencialmente puede tardar minutos esperando hasta que la linea 2 se ejecute. Mientras tanto, como todo el JavaScript en la página está siendo bloqueado por la desarga, la página va a congelarse totalmente, quedando sin respuesta hasta que la descarga finalice.</p>
+<p>El código síncrono está bien para cosas que pasan rápido, pero es horrible para cosas que requieren guardar, cargar o descargar. Que pasa si el servidor del que estás bajando la foto es lento, o la conexión a internet que usas es lenta, o la computadora donde corres el código tiene muchas tabs con videos de gatos en Youtube que anda lento? Significa que potencialmente puede tardar minutos esperando hasta que la linea 2 se ejecute. Mientras tanto, como todo el JavaScript en la página está siendo bloqueado por la descarga, la página va a congelarse totalmente, quedando sin respuesta hasta que la descarga finalice.</p>
 <p>La ejecución bloqueante debe ser evitada a todo costo, especialmente cuando hace que tu programa se congele o quede inusable. Asumamos que la foto de arriba toma 1 segundo para descargar. Para ilustrar cuanto es un segundo para una computadora moderna, acá hay un programa que testea cuantas tareas de JavaScript podemos procesar en un segundo.</p>
 <pre><code class="lang-js">function medirVelocidadCiclo() {
   var contador = 0
@@ -230,7 +230,7 @@ subirTweetConFoto(foto, &#39;@maxogden&#39;)
   var ahora = Date.now()
 
   // Cicla hasta que Date.now() es 1000 milisegundos (1 segundo) o más
-  // en el futuro respecto del comienzo del ciclado. En cada ciclo, llama a sumaUno 
+  // en el futuro respecto del comienzo del ciclado. En cada ciclo, llama a sumaUno
   while (Date.now() - ahora &lt; 1000) sumaUno()
 
   // Finalmente pasaron &gt;= 1000ms, entonces vamos a imprimir el total
@@ -239,10 +239,10 @@ subirTweetConFoto(foto, &#39;@maxogden&#39;)
 
 medirVelocidadCiclo()
 </code></pre>
-<p>Copiá y pegá el código de arriba en tu consola de JavaScript y luego de un segundo debería imprimir un número. En mi computadora veo <code>8527360</code>, aproximadamente <strong>8.5 millones</strong>. En un segundo JavaScript puede llamar <code>sumaUno</code> 8.5 millones de veces! Entonces si tenés código síncrono descargando una foto, y la foto tarda un segundo, significa que potencialmente estás previniendo la ejecución de 8.5 millones de operaciones mientras JavaScript está bloqueado.</p>
-<p>Algunos lenguajes tienen una función llamada <code>sleep</code> que bloquea la ejecución por un número de segundos. Por ejemplo acá hay un código de <a href="http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29"><code>bash</code></a> corriendo <code>Terminal.app</code> en Mac OS que usa <code>sleep</code>. Cuando corrés el comando <code>sleep 3 &amp;&amp; echo &#39;me desperté&#39;</code> bloquea por 3 segundos antes de imprimir <code>me desperté</code>.</p>
+<p>Copia y pega el código de arriba en tu consola de JavaScript y luego de un segundo debería imprimir un número. En mi computadora veo <code>8527360</code>, aproximadamente <strong>8.5 millones</strong>. En un segundo JavaScript puede llamar <code>sumaUno</code> 8.5 millones de veces! Entonces si tienes código síncrono descargando una foto, y la foto tarda un segundo, significa que potencialmente estás previniendo la ejecución de 8.5 millones de operaciones mientras JavaScript está bloqueado.</p>
+<p>Algunos lenguajes tienen una función llamada <code>sleep</code> que bloquea la ejecución por un número de segundos. Por ejemplo acá hay un código de <a href="http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29"><code>bash</code></a> corriendo <code>Terminal.app</code> en Mac OS que usa <code>sleep</code>. Cuando corres el comando <code>sleep 3 &amp;&amp; echo &#39;me desperté&#39;</code> bloquea por 3 segundos antes de imprimir <code>me desperté</code>.</p>
 <p><img src="images/bash-sleep.png" alt="console"></p>
-<p>JavaScript no tiene una función <code>sleep</code>. Como sos un gato, seguramente te estás preguntando, &quot;Por qué estoy aprendiendo un lenguaje de programación que no contempla dormir?&quot;. Pero no te vayas. En vez de depender de <code>sleep</code> para esperar a que pasen cosas, el diseño de JavaScript alienta el uso de funciones en su lugar. Si tenés que esperar que finalice la tarea A antes de comenzar la tarea B, ponés todo el ceodigo de la tarea B en una función y la llamás solo cuando A terminó.</p>
+<p>JavaScript no tiene una función <code>sleep</code>. Como sos un gato, seguramente te estás preguntando, &quot;Por qué estoy aprendiendo un lenguaje de programación que no contempla dormir?&quot;. Pero no te vayas. En vez de depender de <code>sleep</code> para esperar a que pasen cosas, el diseño de JavaScript alienta el uso de funciones en su lugar. Si tienes que esperar que finalice la tarea A antes de comenzar la tarea B, pones todo el código de la tarea B en una función y la llamas solo cuando A terminó.</p>
 <p>Por ejemplo, este es código bloqueante:</p>
 <pre><code class="lang-js">a()
 b()
@@ -263,20 +263,20 @@ b()
   })
 }
 </code></pre>
-<p>Volvamos a nuestro ejemplo no-bloqueante, <code>a(b)</code>, donde llamamos a <code>a</code> y le pasamos <code>b</code> como primer argumento. En la definición de la función <code>a</code> de arriba, el argumento <code>fin</code> <em>es</em> nuestra función <code>b</code> que le pasamos. Este comportamiento es difícil de entender al principio. Cuando llamás una función, los argumentos que pasás no van a tener necesariamente los mismos nombres de variable que cuando están dentro de una función. En este caso lo que llamamos <code>b</code> es <code>fin</code> dentro de la función. Pero <code>b</code> y <code>fin</code> son solo nombres de variables que apuntan a la misma función subyacente. Por lo general las funciones callback son etiquetadas con nombres como <code>fin</code> o <code>callback</code> para dejar claro que esas funciones deberían ser llamadas cuando la función actual termina su trabajo.</p>
-<p>Entonces, mientras <code>a</code> haga su trabajo y llame a <code>b</code> cuando termine, ambas <code>a</code> y <code>b</code> son llamadas en sus versiones bloqueantes y no-bloqueantes. La diferencia es que en la versión no-bloqueante no bloqueamos la ejecución de JavaScript. En general el estilo no-bloqueante es donde escribeis toda función para que retorne lo más rápido posible, sin bloquear en ningún momento.</p>
-<p>Para ir un poco más profundo: Si <code>a</code> toma un segundo para completar, y usas la versión bloqueante, significa que podés hacer una sola cosa. Si usas la versión no-bloqueante (usando callbacks) podés hascer <em>literalmente millones</em> de otras cosas en el mismo segundo, lo que significa que podés terminar tu trabajo millones de veces más rápido y dormir el resto del día.</p>
+<p>Volvamos a nuestro ejemplo no-bloqueante, <code>a(b)</code>, donde llamamos a <code>a</code> y le pasamos <code>b</code> como primer argumento. En la definición de la función <code>a</code> de arriba, el argumento <code>fin</code> <em>es</em> nuestra función <code>b</code> que le pasamos. Este comportamiento es difícil de entender al principio. Cuando llamas una función, los argumentos que pasas no van a tener necesariamente los mismos nombres de variable que cuando están dentro de una función. En este caso lo que llamamos <code>b</code> es <code>fin</code> dentro de la función. Pero <code>b</code> y <code>fin</code> son solo nombres de variables que apuntan a la misma función subyacente. Por lo general las funciones callback son etiquetadas con nombres como <code>fin</code> o <code>callback</code> para dejar claro que esas funciones deberían ser llamadas cuando la función actual termina su trabajo.</p>
+<p>Entonces, mientras <code>a</code> haga su trabajo y llame a <code>b</code> cuando termine, ambas <code>a</code> y <code>b</code> son llamadas en sus versiones bloqueantes y no-bloqueantes. La diferencia es que en la versión no-bloqueante no bloqueamos la ejecución de JavaScript. En general el estilo no-bloqueante es donde escribes toda función para que retorne lo más rápido posible, sin bloquear en ningún momento.</p>
+<p>Para ir un poco más profundo: Si <code>a</code> toma un segundo para completar, y usas la versión bloqueante, significa que puedes hacer una sola cosa. Si usas la versión no-bloqueante (usando callbacks) puedes hascer <em>literalmente millones</em> de otras cosas en el mismo segundo, lo que significa que puedes terminar tu trabajo millones de veces más rápido y dormir el resto del día.</p>
 <p>Recordarlo: Programar se trata de ser vago y deberías ser vos el que duerma, y no tu computadora.</p>
-<p>Con suerte podés ver ahora como los callbacks son solo funciones que llaman a otras funciones luego de una tarea asíncrona. Algunos ejemplos clásicos de tareas asíncronas son leer una foto, descargar una canción, subir una foto, hablarle a la base de datos, esperar a que un usuario aprete una tecla o haga click en un link, etc. Cualquier cosa toma tiempo. JavaScript es genial manejando tareas asíncronas como esas siempre y cuando te tomes el tiempo de aprender como usar callbacks y mantener tu JavaScript lejos de ser bloqueado.</p>
+<p>Con suerte puedes ver ahora como los callbacks son solo funciones que llaman a otras funciones luego de una tarea asíncrona. Algunos ejemplos clásicos de tareas asíncronas son leer una foto, descargar una canción, subir una foto, hablarle a la base de datos, esperar a que un usuario aprete una tecla o haga click en un link, etc. Cualquier cosa toma tiempo. JavaScript es genial manejando tareas asíncronas como esas siempre y cuando te tomes el tiempo de aprender como usar callbacks y mantener tu JavaScript lejos de ser bloqueado.</p>
 <h2 id="fin-">Fin!</h2>
-<p>Este es solo el comienzo de tu relación con JavaScript! No podés aprender todo de una, pero podés buscar que funciona para vos e intentar aprender todos los conceptos acá.</p>
-<p>Te recomiendo que vuelvas mañana y lo hagas todo de nuevo desde el principio! Puede tomarte algunas pasadas hasta que entiendas todo (programar es difícil). Solo intentá evitar leer esta página en cuartos que contengan objetos brillantes... Pueden ser increiblemente distractivos.</p>
-<p>Tenés algún otro tópico que querés que sea cubierto? Abrí un issue para ello <a href="http://github.com/impronunciable/javascript-for-cats">en github</a>.</p>
+<p>Este es solo el comienzo de tu relación con JavaScript! No puedes aprender todo de una, pero puedes buscar que funciona para vos e intentar aprender todos los conceptos acá.</p>
+<p>Te recomiendo que vuelvas mañana y lo hagas todo de nuevo desde el principio! Puede tomarte algunas pasadas hasta que entiendas todo (programar es difícil). Solo intenta evitar leer esta página en cuartos que contengan objetos brillantes... Pueden ser increiblemente distractivos.</p>
+<p>Tienes algún otro tópico que quieres que sea cubierto? Abre un issue para ello <a href="http://github.com/impronunciable/javascript-for-cats">en github</a>.</p>
 <h3 id="-a-id-recommended-reading-href-recommended-reading-a-lectura-recomendada"><a id="recommended-reading" href="#recommended-reading">#</a> Lectura recomendada</h3>
-<p>  JavaScript para Gatos se saltea un montón de detalles que no son importantes para empezar (los gatod no son famosos por su atención), pero si sentís que necesitás aprender en profundidad chequeá esto:</p>
+<p>  JavaScript para Gatos se saltea un montón de detalles que no son importantes para empezar (los gatos no son famosos por su atención), pero si sientes que necesitas aprender en profundidad mira esto:</p>
 <p>  Nota del traductor: La información de los siguientes links es en inglés. Lamentablemente escasea la bibliografía en español. Tomalo como una buena excusa para aprender un nuevo lenguaje (además de JavaScript)</p>
 <ul>
-<li><a href="http://nodeschool.io/">NodeSchool.io</a> es un software educacional open source manejado por la comunidad que enseña diferentes areas de web development en un formato interactivo y auto-guiado. Yo ayudé a hacer NodeSchool! lamentablemente este sitio tiene menos gatos. </li>
+<li><a href="http://nodeschool.io/">NodeSchool.io</a> es un software educacional open source manejado por la comunidad que enseña diferentes areas de web development en un formato interactivo y auto-guiado. Yo ayudé a hacer NodeSchool! lamentablemente este sitio tiene menos gatos.</li>
 <li><a href="http://eloquentjavascript.net/">Eloquent Javascript</a> es un libro gratuito que te enseña JavaScript! Es muy bueno! Especialmente el capítulo llamado <a href="http://eloquentjavascript.net/chapter2.html">values, variables, and control flow</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide">La Guía de Mozilla de JavaScript</a> también tiene un excelente capítulo llamado <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Values,_variables,_and_literals">values, variables and literals</a></li>
 <li><a href="https://github.com/feross/standard">La guía de estilo estándar` de JS</a> es un <code>&quot;zero configuration&quot; linter</code> para el estilo de JavaScript que yo uso.</li>
@@ -289,7 +289,7 @@ b()
 <center><img src="images/customers3.png" alt="satisfied customer"></center>
 <center><img src="images/customers4.png" alt="satisfied customer"></center>
 
-<p><em>JSForCats.com es un trabajo en progreso con amor de <a href="http://twitter.com/maxogden">@maxogden</a>. Si querés contribuir con este material y mejorarlo, el repo de GitHub está <a href="http://github.com/maxogden/javascript-for-cats">por acá</a>.</em></p>
+<p><em>JSForCats.com es un trabajo en progreso con amor de <a href="http://twitter.com/maxogden">@maxogden</a>. Si quieres contribuir con este material y mejorarlo, el repo de GitHub está <a href="http://github.com/maxogden/javascript-for-cats">por acá</a>.</em></p>
 <center><img src="images/awesome.jpg" alt="console"></center>
 
 <p>El traductor <a href="https://twitter.com/impronunciable">@impronunciable</a> también es amigo de algunos gatos</p>
