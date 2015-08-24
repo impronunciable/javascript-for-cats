@@ -2,14 +2,14 @@
 ## Una introducción para nuevos programadores <span class="right">![cat](images/substack-cats.png)</span>
 ### *Tan simple que hasta tu amigo humano puede también hacerlo!*
 
-JavaScript es un lenguaje de programación o, en otras palabras, un medio por el cual la computadora es instruída para hacer cosas. Así como cualquiera de nosotros controlamos a los humanos con silbidos y maullidos, uno puede controlar computadoras con enunciados escritos en un lenguaje de programación. Todos los navegadores web entienden JavaSceipt y vos podés tomar ventaja de eso para hacer que las páginas web hagan cosas locas!
+JavaScript es un lenguaje de programación o, en otras palabras, un medio por el cual la computadora es instruída para hacer cosas. Así como cualquiera de nosotros controlamos a los humanos con silbidos y maullidos, uno puede controlar computadoras con enunciados escritos en un lenguaje de programación. Todos los navegadores web entienden JavaScript y vos podés tomar ventaja de eso para hacer que las páginas web hagan cosas locas!
 
 JavaScript empezó como una manera de hacer páginas web más interactivas. Hoy en día JavaScript corre no solo en navegadores &mdash; también corre en servidores web, teléfonos y hasta robots! Esta página te va a enseñar una base de JavaScript para que puedas arrancar instantáneamente*.
 
 
-\* *Tiempo real: Más que instantáneo. Probablemente una hora o dos. Además como sos un gato te debe gustar más estar tirado al sol que corriendo*
+\* *Tiempo real del tutorial: Más que instantáneo. Probablemente una hora o dos. Además como sos un gato te debe gustar más estar tirado al sol que corriendo.*
 
-## Table of contents
+## Tabla de contenidos
 
 - [La base](#basics)
 - [Strings](#strings)
@@ -17,9 +17,9 @@ JavaScript empezó como una manera de hacer páginas web más interactivas. Hoy 
 - [Usando funciones](#functions)
 - [Funciones del lenguaje](#standard-library)
 - [Código de terceros](#third-party-javascript)
-- [Escribiendo nuevas funciones](#writing-functions)
+- [Creando nuevas funciones](#writing-functions)
 - [Ciclos](#loops)
-- [Arreglos](#arrays)
+- [Arrays](#arrays)
 - [Objetos](#objects)
 - [Callbacks](#callbacks)
 - [Lectura recomendada](#recommended-reading)
@@ -66,9 +66,9 @@ Para guardar valores usamos pendorchos llamados **variables**. La palabra 'varia
 
 `var` es una abreviatura de variable y el símbolo `=` significa *guardá la cosa del lado derecho en la cosa del lado izquierdo*. Además como podés ver, ahora que estamos guardando nuestra sentencia en una variable la consola no devuelve la sentencia, sino que nos da `undefined` como respuesta, lo que significa *no hay nada para devolver*.
 
-Si simplemente tipeas el nombre de una variable en la consola va a imprimir el valor guardado en esa variable. Una nota sobre las variables es que por defecto se pierden cuando cambias a una página diferente. Si fuera a refrescar la página en Chrome, por ejemplo, mi variable `sentenciaPerro` desaparecería para siempre, como si nunca hubiera existido. Pero no te preocupes por esto demasiado &mdash; podés apretar las flechas para arriba y abajo en el teclado cuando estás en la consola y obtener las sentencias que fuiste escribiendo últimamente.
+Si simplemente tipeas el nombre de una variable en la consola va a imprimir el valor guardado en esa variable. Una nota sobre las variables es que por defecto se pierden cuando cambiás a una página diferente. Si fuera a refrescar la página en Chrome, por ejemplo, mi variable `sentenciaPerro` desaparecería para siempre, como si nunca hubiera existido. Pero no te preocupes por esto demasiado &mdash; podés apretar las flechas para arriba y abajo en el teclado cuando estás en la consola y obtener las sentencias que fuiste escribiendo últimamente.
 
-### <a id="functions" href="#functions">#</a> Funciones
+### <a id="functions" href="#functions">#</a> Usando funciones
 
 Ahora que tenemos nuestra sentencia guardada en una variable, vamos a cambiar la palabra guardada en ella! Podemos hacer esto creando una *función*. Las *funciones* son un tipo de valor que realiza justamente una *función* específica (También conocido como propósito o acción) por nosotros. Llamarlas "acciones" suena extraño y supongo que por eso eligieron "función" en su lugar.
 
@@ -78,7 +78,7 @@ JavaScript tiene una función llamada `replace` (reemplazar en inglés) que hace
 
 Notas como el valor de `sentenciaPerro` es el mismo incluso después de correr `replace` sobre él? Esto se debe a que la función `replace`, (y la mayoría de funciones de JavaScript para estos propósitos) toman el valor que le damos y retornan un **nuevo valor**, sin modificar el valor que le pasamos. Como no queremos guardar el resultado (no hay `=` en el lado izquierdo de la operación de reemplazo) se imprime el valor retornado en la consola.
 
-### <a id="standard-library" href="#standard-library">#</a> La "biblioteca estándar" 
+### <a id="standard-library" href="#standard-library">#</a> Funciones del lenguaje 
 
 Te debés estar preguntando que otras funciones están disponibles en JavaScript. La respuesta: UN MONTON. Hay muchas **bibliotecas estándar integradas** de las cuales podés aprender en MDN (Un sitio de Mozilla que tiene mucha y muy buena información sobre tecnologías web). Por ejemplo [acá está la página de MDN sobre las funciones relativas a la matemática de JavaScript](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Math).
 
@@ -90,7 +90,7 @@ También existe un montón de código JavaScript disponible que no forma parte d
 
 ### <a id="writing-functions" href="#writing-functions">#</a> Creando nuevas funciones
 
-No estás limitado a usar funciones de otros &mdash; podés también escribirlas vos. Es muy simple! Hagamos una función llamada `meterleOnda` que agregue unos puntos de exclamación al final de un string.
+No estás limitado a usar funciones de otros &mdash; podés también escribirlas vos. Es muy simple! Hagamos una función llamada `ponerleOnda` que agregue unos puntos de exclamación al final de un string.
 
     function ponerleOnda(string) {
       return string + '!!!!'
@@ -398,7 +398,7 @@ Te recomiendo que vuelvas mañana y lo hagas todo de nuevo desde el principio! P
 
 Tenés algún otro tópico que querés que sea cubierto? Abrí un issue para ello [en github](http://github.com/impronunciable/javascript-for-cats).
 
-### <a id="recommended-reading" href="#recommended-reading">#</a> Lectura recomendad
+### <a id="recommended-reading" href="#recommended-reading">#</a> Lectura recomendada
 
   JavaScript para Gatos se saltea un montón de detalles que no son importantes para empezar (los gatod no son famosos por su atención), pero si sentís que necesitás aprender en profundidad chequeá esto:
 

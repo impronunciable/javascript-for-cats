@@ -26,10 +26,10 @@
 <p><span class="bigTitle">JavaScript Para Gatos</span></p>
 <h2 id="una-introducci-n-para-nuevos-programadores-span-class-right-cat-images-substack-cats-png-span-">Una introducción para nuevos programadores <span class="right"><img src="images/substack-cats.png" alt="cat"></span></h2>
 <h3 id="-tan-simple-que-hasta-tu-amigo-humano-puede-tambi-n-hacerlo-"><em>Tan simple que hasta tu amigo humano puede también hacerlo!</em></h3>
-<p>JavaScript es un lenguaje de programación o, en otras palabras, un medio por el cual la computadora es instruída para hacer cosas. Así como cualquiera de nosotros controlamos a los humanos con silbidos y maullidos, uno puede controlar computadoras con enunciados escritos en un lenguaje de programación. Todos los navegadores web entienden JavaSceipt y vos podés tomar ventaja de eso para hacer que las páginas web hagan cosas locas!</p>
+<p>JavaScript es un lenguaje de programación o, en otras palabras, un medio por el cual la computadora es instruída para hacer cosas. Así como cualquiera de nosotros controlamos a los humanos con silbidos y maullidos, uno puede controlar computadoras con enunciados escritos en un lenguaje de programación. Todos los navegadores web entienden JavaScript y vos podés tomar ventaja de eso para hacer que las páginas web hagan cosas locas!</p>
 <p>JavaScript empezó como una manera de hacer páginas web más interactivas. Hoy en día JavaScript corre no solo en navegadores &mdash; también corre en servidores web, teléfonos y hasta robots! Esta página te va a enseñar una base de JavaScript para que puedas arrancar instantáneamente*.</p>
-<p>* <em>Tiempo real: Más que instantáneo. Probablemente una hora o dos. Además como sos un gato te debe gustar más estar tirado al sol que corriendo</em></p>
-<h2 id="table-of-contents">Table of contents</h2>
+<p>* <em>Tiempo real del tutorial: Más que instantáneo. Probablemente una hora o dos. Además como sos un gato te debe gustar más estar tirado al sol que corriendo.</em></p>
+<h2 id="tabla-de-contenidos">Tabla de contenidos</h2>
 <ul>
 <li><a href="#basics">La base</a></li>
 <li><a href="#strings">Strings</a></li>
@@ -37,9 +37,9 @@
 <li><a href="#functions">Usando funciones</a></li>
 <li><a href="#standard-library">Funciones del lenguaje</a></li>
 <li><a href="#third-party-javascript">Código de terceros</a></li>
-<li><a href="#writing-functions">Escribiendo nuevas funciones</a></li>
+<li><a href="#writing-functions">Creando nuevas funciones</a></li>
 <li><a href="#loops">Ciclos</a></li>
-<li><a href="#arrays">Arreglos</a></li>
+<li><a href="#arrays">Arrays</a></li>
 <li><a href="#objects">Objetos</a></li>
 <li><a href="#callbacks">Callbacks</a></li>
 <li><a href="#recommended-reading">Lectura recomendada</a></li>
@@ -65,19 +65,19 @@
 <p>Para guardar valores usamos pendorchos llamados <strong>variables</strong>. La palabra &#39;variable&#39; significa &#39;puede cambiar&#39; y es usado porque las variables pueden guardar distintos tipos de valores y cambiar su valor muchas veces. Las variables son bastante parecidas a un buzón. Ponemos algo en una variable, como una sentencia, y después le damos a la variable una dirección que puede usar para ir a buscar esa sentencia más tarde. En la vida real los buzones necesitan números de código postal pero en JavaScript usualmente se reemplazan con letras en minúscula o números sin espacios.</p>
 <p><img src="images/console-variables.gif" alt="consola"></p>
 <p><code>var</code> es una abreviatura de variable y el símbolo <code>=</code> significa <em>guardá la cosa del lado derecho en la cosa del lado izquierdo</em>. Además como podés ver, ahora que estamos guardando nuestra sentencia en una variable la consola no devuelve la sentencia, sino que nos da <code>undefined</code> como respuesta, lo que significa <em>no hay nada para devolver</em>.</p>
-<p>Si simplemente tipeas el nombre de una variable en la consola va a imprimir el valor guardado en esa variable. Una nota sobre las variables es que por defecto se pierden cuando cambias a una página diferente. Si fuera a refrescar la página en Chrome, por ejemplo, mi variable <code>sentenciaPerro</code> desaparecería para siempre, como si nunca hubiera existido. Pero no te preocupes por esto demasiado &mdash; podés apretar las flechas para arriba y abajo en el teclado cuando estás en la consola y obtener las sentencias que fuiste escribiendo últimamente.</p>
-<h3 id="-a-id-functions-href-functions-a-funciones"><a id="functions" href="#functions">#</a> Funciones</h3>
+<p>Si simplemente tipeas el nombre de una variable en la consola va a imprimir el valor guardado en esa variable. Una nota sobre las variables es que por defecto se pierden cuando cambiás a una página diferente. Si fuera a refrescar la página en Chrome, por ejemplo, mi variable <code>sentenciaPerro</code> desaparecería para siempre, como si nunca hubiera existido. Pero no te preocupes por esto demasiado &mdash; podés apretar las flechas para arriba y abajo en el teclado cuando estás en la consola y obtener las sentencias que fuiste escribiendo últimamente.</p>
+<h3 id="-a-id-functions-href-functions-a-usando-funciones"><a id="functions" href="#functions">#</a> Usando funciones</h3>
 <p>Ahora que tenemos nuestra sentencia guardada en una variable, vamos a cambiar la palabra guardada en ella! Podemos hacer esto creando una <em>función</em>. Las <em>funciones</em> son un tipo de valor que realiza justamente una <em>función</em> específica (También conocido como propósito o acción) por nosotros. Llamarlas &quot;acciones&quot; suena extraño y supongo que por eso eligieron &quot;función&quot; en su lugar.</p>
 <p>JavaScript tiene una función llamada <code>replace</code> (reemplazar en inglés) que hace exactamente lo que queremos! Las funciones toman valores en sus paréntesis (cero, uno o más) y devuelve o bien nada (<code>undefined</code>) o el string modificado. La función <code>replace</code> está disponible para usar sobre cualquier string y toma 2 valores: los caracteres que queremos sacar y los caracteres que los van a reemplazar. Se torna un poco confuso describir estas cosas así que acá tenemos un ejemplo visual:</p>
 <p><img src="images/console-replace.gif" alt="consola"></p>
 <p>Notas como el valor de <code>sentenciaPerro</code> es el mismo incluso después de correr <code>replace</code> sobre él? Esto se debe a que la función <code>replace</code>, (y la mayoría de funciones de JavaScript para estos propósitos) toman el valor que le damos y retornan un <strong>nuevo valor</strong>, sin modificar el valor que le pasamos. Como no queremos guardar el resultado (no hay <code>=</code> en el lado izquierdo de la operación de reemplazo) se imprime el valor retornado en la consola.</p>
-<h3 id="-a-id-standard-library-href-standard-library-a-la-biblioteca-est-ndar-"><a id="standard-library" href="#standard-library">#</a> La &quot;biblioteca estándar&quot;</h3>
+<h3 id="-a-id-standard-library-href-standard-library-a-funciones-del-lenguaje"><a id="standard-library" href="#standard-library">#</a> Funciones del lenguaje</h3>
 <p>Te debés estar preguntando que otras funciones están disponibles en JavaScript. La respuesta: UN MONTON. Hay muchas <strong>bibliotecas estándar integradas</strong> de las cuales podés aprender en MDN (Un sitio de Mozilla que tiene mucha y muy buena información sobre tecnologías web). Por ejemplo <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Math">acá está la página de MDN sobre las funciones relativas a la matemática de JavaScript</a>.</p>
 <h3 id="-a-id-third-party-javascript-href-third-party-javascript-a-c-digo-de-terceros"><a id="third-party-javascript" href="#third-party-javascript">#</a> Código de terceros</h3>
 <p>También existe un montón de código JavaScript disponible que no forma parte de la <strong>biblioteca estándar</strong>. Se suele referir al JavaScript escrito por tercero como una &quot;biblioteca&quot; o &quot;plugin&quot;. Uno de mis favoritos se llama <strong>Underscore.js</strong>. Vayamos a buscarlo y cargarlo en nuestra página! Primero andá al sitio de Underscore, <a href="http://underscorejs.org/">http://underscorejs.org/</a>, hacé click en el link de descarga (En general uso la versión de desarrollo porque son fáciles de leer pero cualquiera de las 2 te va a dar la misma funcionalidad), y copiá todo el código en tu portapapeles (podés usar <strong>Seleccionar todo</strong> haciendo click derecho). Después pegalo en tu consola y apretá enter. Ahora tu navegador tiene una nueva variable: <code>_</code>. Underscore te da una gran cantidad de funciones útiles para jugar. Vamos a aprender a usarlas más adelante.</p>
 <p><img src="images/underscore.gif" alt="console"></p>
 <h3 id="-a-id-writing-functions-href-writing-functions-a-creando-nuevas-funciones"><a id="writing-functions" href="#writing-functions">#</a> Creando nuevas funciones</h3>
-<p>No estás limitado a usar funciones de otros &mdash; podés también escribirlas vos. Es muy simple! Hagamos una función llamada <code>meterleOnda</code> que agregue unos puntos de exclamación al final de un string.</p>
+<p>No estás limitado a usar funciones de otros &mdash; podés también escribirlas vos. Es muy simple! Hagamos una función llamada <code>ponerleOnda</code> que agregue unos puntos de exclamación al final de un string.</p>
 <pre><code>function ponerleOnda(string) {
   return string + &#39;!!!!&#39;
 }
@@ -272,7 +272,7 @@ b()
 <p>Este es solo el comienzo de tu relación con JavaScript! No podés aprender todo de una, pero podés buscar que funciona para vos e intentar aprender todos los conceptos acá.</p>
 <p>Te recomiendo que vuelvas mañana y lo hagas todo de nuevo desde el principio! Puede tomarte algunas pasadas hasta que entiendas todo (programar es difícil). Solo intentá evitar leer esta página en cuartos que contengan objetos brillantes... Pueden ser increiblemente distractivos.</p>
 <p>Tenés algún otro tópico que querés que sea cubierto? Abrí un issue para ello <a href="http://github.com/impronunciable/javascript-for-cats">en github</a>.</p>
-<h3 id="-a-id-recommended-reading-href-recommended-reading-a-lectura-recomendad"><a id="recommended-reading" href="#recommended-reading">#</a> Lectura recomendad</h3>
+<h3 id="-a-id-recommended-reading-href-recommended-reading-a-lectura-recomendada"><a id="recommended-reading" href="#recommended-reading">#</a> Lectura recomendada</h3>
 <p>  JavaScript para Gatos se saltea un montón de detalles que no son importantes para empezar (los gatod no son famosos por su atención), pero si sentís que necesitás aprender en profundidad chequeá esto:</p>
 <p>  Nota del traductor: La información de los siguientes links es en inglés. Lamentablemente escasea la bibliografía en español. Tomalo como una buena excusa para aprender un nuevo lenguaje (además de JavaScript)</p>
 <ul>
