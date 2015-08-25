@@ -38,7 +38,7 @@ Hay JavaScript corriendo en esta página en este momento. Juguemos un poco con e
 
 Primero, haz click derecho en cualquier parte de la pantalla y selecciona **Inspeccionar elemento** (o **Inspect element** en inglés), después click en el tab que dice **Console**. Deberías ver una cosa que se parece a esto:
 
-![consola](images/console.gif)
+<p align="center"><img src="images/console.gif" /></p>
 
 Esta es una consola, también llamada "línea de comando" o "terminal". Básicamente es una forma de escribir una cosa a la vez en la computadora e inmediatamente obtener la respuesta. Existen herramientas de aprendizaje súper útiles (Yo todavía uso la consola casi todos los días que escribo código).
 
@@ -50,7 +50,7 @@ Usar la consola es una parte importante a la hora de aprender JavaScript. Si no 
 
 Como soy un gato quiero reemplazar cada instancia de la palabra `perro` en la Internet con `esos malditos perros`. Primero voy a la consola y escribo unas pocas sentencias que contienen la palabra `perro` al menos una vez. En JavaScript un conjunto de letras, números, palabras o cualquier otra cosa es conocido como un **String** (o cadena de caracteres). Los strings deben empezar y terminar con una comilla. Da igual usar comilla simple `'` o doble `"`, siempre y cuando uses el mismo símbolo al principio y al final.
 
-![consola](images/console-strings.gif)
+<p align="center"><img src="images/console-strings.gif" /></p>
 
 Ves el horrible mensaje de error? No te preocupes - no rompiste ninguna ley. `Syntax Error ILLEGAL` es como suena cuando un robot te quiere decir que tu programa tiene un problema. Las primeras dos sentencias coinciden con el tipo de comilla usado al comienzo y final de la sentencia pero cuando los mezclamos la computadora enloquece, es como mezclar sandía con vino.
 
@@ -62,7 +62,7 @@ Los **valores** son los componentes más simples en JavaScript. `1` es un valor,
 
 Para guardar valores usamos cosas llamadas **variables**. La palabra 'variable' significa 'puede cambiar' y es usado porque las variables pueden guardar distintos tipos de valores y cambiar su valor muchas veces. Las variables son bastante parecidas a un buzón. Ponemos algo en una variable, como una sentencia, y después le damos a la variable una dirección que puede usar para ir a buscar esa sentencia más tarde. En la vida real los buzones necesitan números de código postal pero en JavaScript usualmente se reemplazan con letras en minúscula o números sin espacios.
 
-![consola](images/console-variables.gif)
+<p align="center"><img src="images/console-variables.gif" /></p>
 
 `var` es una abreviatura de variable y el símbolo `=` significa *guarda la cosa del lado derecho en la cosa del lado izquierdo*. Además como puedes ver, ahora que estamos guardando nuestra sentencia en una variable la consola no devuelve la sentencia, sino que nos da `undefined` como respuesta, lo que significa *no hay nada para devolver*.
 
@@ -74,7 +74,7 @@ Ahora que tenemos nuestra sentencia guardada en una variable, vamos a cambiar la
 
 JavaScript tiene una función llamada `replace` (reemplazar en inglés) que hace exactamente lo que queremos! Las funciones toman valores en sus paréntesis (cero, uno o más) y devuelve o bien nada (`undefined`) o el string modificado. La función `replace` está disponible para usar sobre cualquier string y toma 2 valores: los caracteres que queremos sacar y los caracteres que los van a reemplazar. Se torna un poco confuso describir estas cosas así que acá tenemos un ejemplo visual:
 
-![consola](images/console-replace.gif)
+<p align="center"><img src="images/console-replace.gif" /></p>
 
 Notas como el valor de `sentenciaPerro` es el mismo incluso después de correr `replace` sobre él? Esto se debe a que la función `replace`, (y la mayoría de funciones de JavaScript para estos propósitos) toman el valor que le damos y retornan un **nuevo valor**, sin modificar el valor que le pasamos. Como no queremos guardar el resultado (no hay `=` en el lado izquierdo de la operación de reemplazo) se imprime el valor retornado en la consola.
 
@@ -86,7 +86,7 @@ Te debes estar preguntando que otras funciones están disponibles en JavaScript.
 
 También existe un montón de código JavaScript disponible que no forma parte de la **biblioteca estándar**. Se suele referir al JavaScript escrito por tercero como una "biblioteca" o "plugin". Uno de mis favoritos se llama **Underscore.js**. Vayamos a buscarlo y cargarlo en nuestra página! Primero ve al sitio de Underscore, [http://underscorejs.org/](http://underscorejs.org/), haz click en el link de descarga (En general uso la versión de desarrollo porque son fáciles de leer pero cualquiera de las 2 te va a dar la misma funcionalidad), y copia todo el código en tu portapapeles (puedes usar **Seleccionar todo** haciendo click derecho). Después pegalo en tu consola y apretá enter. Ahora tu navegador tiene una nueva variable: `_`. Underscore te da una gran cantidad de funciones útiles para jugar. Vamos a aprender a usarlas más adelante.
 
-![console](images/underscore.gif)
+<p align="center"><img src="images/underscore.gif" /></p>
 
 ### <a id="writing-functions" href="#writing-functions">#</a> Creando nuevas funciones
 
@@ -98,17 +98,17 @@ No estás limitado a usar funciones de otros &mdash; puedes también escribirlas
 
 En mi cabeza lo leo en voz alta como: "hay una función llamada 'ponerle onda' que toma un string y devuelve una nueva copia del string que tiene algunos puntos de exclamación al final". Así es como escribo esto en la consola manualmente sin escribir la función:
 
-![console](images/custom-function-manually.gif)
+<p align="center"><img src="images/custom-function-manually.gif" /></p>
 
 La expresión `string + !!!!` devuelve un nuevo string y nuestra variable llamada `string` queda igual que antes (ya que nunca la actualizamos usando `=`).
 
 Usemos nuestra función en vez de hacerlo manualmente. Primero, pega la función en la consola y después **llama** a la función **pasandole** un string:
 
-![console](images/custom-function-call.gif)
+<p align="center"><img src="images/custom-function-call.gif" /></p>
 
 Puedes también llamar a la misma función pasandole una variable que apunta a un string (en el ejemplo de arriba escribimos el string directo como un valor en vez de guardarlo como una variable primero):
 
-![console](images/custom-function-call-variable.gif)
+<p align="center"><img src="images/custom-function-call-variable.gif" /></p>
 
 La linea `ponerleOnda(sentencia)` es equivalente a decir `sentencia + '!!!!'`. Que pasa si queremos **modificar en el lugar** (conocido como actualizar) el valor de sentencia? Simplemente guarda el valor de retorno de la función en la variable `sentencia`:
 
@@ -119,7 +119,7 @@ Ahora `sentencia` va a tener los signos de exclamación al final! Date cuenta qu
 
 Que pasa si sacamos el `return` de la función?
 
-![console](images/custom-function-no-return.gif)
+<p align="center"><img src="images/custom-function-no-return.gif" /></p>
 
 Por qué `sentencia` está vacía? Porque las funciones devuelven `undefined` por defecto! puedes elegir devolver cualquier valor usando `return`. Las funciones deben tomar un valor y, si cambian el valor o crean uno nuevo que se va a usar más tarde, `devuelven` un valor (curiosidad: un término cool para este estilo es *programación funcional*). Acá tenemos otra función que no devuelve ningún valor pero en cambio usa un método diferente para mostrarnos el resultado:
 
@@ -135,7 +135,7 @@ Esta función, `gritalo`, usa nuestra función `ponerleOnda` y el método nativo
 
 La última linea de la función es otra función nativa que simplemente toma valores que le das y los imprime en la consola.
 
-![console](images/custom-function-console-log.gif)
+<p align="center"><img src="images/custom-function-console-log.gif" /></p>
 
 Entonces hay algo mal con esta función `gritalo`? Depende! Hay 2 tipos principales de funciones:
 
@@ -170,7 +170,7 @@ _.times(10, imprimirNumero)
 
 Este código usa el método [times](http://underscorejs.org/#times) de Underscore que toma un número y una función, empieza en 0 y durante 10 pasos suma de a 1, llamando a la función con el número en cada paso.
 
-![console](images/times-loop.png)
+<p align="center"><img src="images/times-loop.png" /></p>
 
 Si tuvieramos que hacer manualmente lo que hace `times` se vería así:
 
@@ -216,13 +216,13 @@ Para obtener un amigo de tu nuevo array puedes simplemente accederlo directament
 console.log(misAmigosGatos[0])
 ```
 
-![console](images/array-access.png)
+<p align="center"><img src="images/array-access.png" /></p>
 
 Si hiciste un nuevo amigo en el club gatuno de moda la otra noche y quieres agregarlo a tu lista es super simple: `misAmigosGatos.push("gato de moda")`.
 
 Para verificar que el nuevo gato está adentro de tu array puedes usar `.length`:
 
-![console](images/array-push-length.png)
+<p align="center"><img src="images/array-push-length.png" /></p>
 
 Notaste que `push` devolvió el tamaño? Buenisimo! También toma nota que los arrays siempre **preservan el orden** lo que significa que van a recordar el orden en el que agregaste o definiste las cosas. No todo en JavaScript preserva el orden así que recuerda esta propiedad especial de los Arrays!
 
@@ -238,7 +238,7 @@ var direcciones = ["La calle", "Liniers", "La casa de John Bonachon"]
 
 A veces es bueno tener todas las direcciones o nombres en una variable. Pero a veces tienes un gato en mente, digamos Felix, y querés buscar su dirección. Con arrays toma todo un trabajo porque no puedes decirle 'che array, dame la dirección de Felix' porque 'Felix' está en un array y su dirección en otro totalmente diferente.
 
-![console](images/array-lookup.png)
+<p align="center"><img src="images/array-lookup.png" /></p>
 
 Esto puede ser frágil porque nuestro arrays cambian y agregamos un nuevo gato al comienzo podemos también actualizar la variable `posicionDeFelix` apuntando a la nueva ubicación de la información de Felix en los arreglos! Acá mostramos una forma más fácil de mantener guardada la información usando objetos:
 
@@ -249,7 +249,7 @@ var tercerGato = { nombre: "garfield", apellido: "gato", direccion: "Casa de Joh
 ```
 Por qué lo haríamos de esta manera? Porque ahora tenemos una variable para cada gato que podemos usar a la hora de obtener valores del gato de una manera más conveniente y legible.
 
-![console](images/object-lookup.png)
+<p align="center"><img src="images/object-lookup.png" /></p>
 
 Puedes pensar a los Objetos como llaves de un llavero. Cada una es para una puerta en particular y si tienes lindas etiquetas en tus llaves puedes abrir puertas muy rápidamente. De hecho, las cosas del lado izquierdo del `:` son llamadas **claves** (también se conocen como **propiedades**) y las cosas del lado derecho se llaman **valores**.
 
@@ -345,7 +345,7 @@ Copia y pega el código de arriba en tu consola de JavaScript y luego de un segu
 
 Algunos lenguajes tienen una función llamada `sleep` que bloquea la ejecución por un número de segundos. Por ejemplo acá hay un código de [`bash`](http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) corriendo `Terminal.app` en Mac OS que usa `sleep`. Cuando corres el comando `sleep 3 && echo 'me desperté'` bloquea por 3 segundos antes de imprimir `me desperté`.
 
-![console](images/bash-sleep.png)
+<p align="center"><img src="images/bash-sleep.png" /></p>
 
 JavaScript no tiene una función `sleep`. Como sos un gato, seguramente te estás preguntando, "Por qué estoy aprendiendo un lenguaje de programación que no contempla dormir?". Pero no te vayas. En vez de depender de `sleep` para esperar a que pasen cosas, el diseño de JavaScript alienta el uso de funciones en su lugar. Si tienes que esperar que finalice la tarea A antes de comenzar la tarea B, pones todo el código de la tarea B en una función y la llamas solo cuando A terminó.
 
