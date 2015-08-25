@@ -218,7 +218,7 @@ console.log(misAmigosGatos[0])
 
 ![console](images/array-access.png)
 
-Si hiciste un nuevo amigo en el club gatuno de moda la otra noche y quieres agregarlo a tu lista es super simple: `mysAmigosGatos.push("gato de moda")`.
+Si hiciste un nuevo amigo en el club gatuno de moda la otra noche y quieres agregarlo a tu lista es super simple: `misAmigosGatos.push("gato de moda")`.
 
 Para verificar que el nuevo gato está adentro de tu array puedes usar `.length`:
 
