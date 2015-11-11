@@ -51,49 +51,58 @@
 <h2 id="-a-id-basics-href-basics-a-la-base"><a id="basics" href="#basics">#</a> La base</h2>
 <p>Hay JavaScript corriendo en esta página en este momento. Juguemos un poco con eso. Por simplicidad voy a asumir que estás usando Google Chrome para leer esta página (si no es así va a ser probablemente más fácil para los dos si sigues el tutorial usando Chrome).</p>
 <p>Primero, haz click derecho en cualquier parte de la pantalla y selecciona <strong>Inspeccionar elemento</strong> (o <strong>Inspect element</strong> en inglés), después click en el tab que dice <strong>Console</strong>. Deberías ver una cosa que se parece a esto:</p>
-<p><img src="images/console.gif" alt="consola"></p>
+<p align="center"><img src="images/console.gif" /></p>
+
 <p>Esta es una consola, también llamada &quot;línea de comando&quot; o &quot;terminal&quot;. Básicamente es una forma de escribir una cosa a la vez en la computadora e inmediatamente obtener la respuesta. Existen herramientas de aprendizaje súper útiles (Yo todavía uso la consola casi todos los días que escribo código).</p>
 <p>La consola hace algunas cosas realmente geniales. Comencé escribiendo algo y la consola está ayudandome dandome una lista de todas las posibles cosas que puedo continuar escribiendo! Otra cosa que puedes hacer es escribir <code>1 + 1</code> en la consola y después apretar <code>Enter</code> y ver que pasa.</p>
 <p>Usar la consola es una parte importante a la hora de aprender JavaScript. Si no sabes como funciona algo o que comando sirve para qué, puedes ir a la consola y averiguarlo! El siguiente es un ejemplo:</p>
 <h3 id="-a-id-strings-href-strings-a-strings"><a id="strings" href="#strings">#</a> Strings</h3>
 <p>Como soy un gato quiero reemplazar cada instancia de la palabra <code>perro</code> en la Internet con <code>esos malditos perros</code>. Primero voy a la consola y escribo unas pocas sentencias que contienen la palabra <code>perro</code> al menos una vez. En JavaScript un conjunto de letras, números, palabras o cualquier otra cosa es conocido como un <strong>String</strong> (o cadena de caracteres). Los strings deben empezar y terminar con una comilla. Da igual usar comilla simple <code>&#39;</code> o doble <code>&quot;</code>, siempre y cuando uses el mismo símbolo al principio y al final.</p>
-<p><img src="images/console-strings.gif" alt="consola"></p>
+<p align="center"><img src="images/console-strings.gif" /></p>
+
 <p>Ves el horrible mensaje de error? No te preocupes - no rompiste ninguna ley. <code>Syntax Error ILLEGAL</code> es como suena cuando un robot te quiere decir que tu programa tiene un problema. Las primeras dos sentencias coinciden con el tipo de comilla usado al comienzo y final de la sentencia pero cuando los mezclamos la computadora enloquece, es como mezclar sandía con vino.</p>
 <p>Ok, para arreglar una de esas sentencias (reemplazando <code>perro</code> por nuestra versión mejorada) tenemos que primero guardar la sentencia original para poder llamarla de nuevo cuando hagamos nuestra magia de reemplazo. Ves como el string se repite en rojo cuando escribo en la consola? Esto es porque no dijimos que se guarde la sentencia en ningún lado y por eso no las devuelve (O nos da un error cuando cometemos algún error).</p>
 <h3 id="-a-id-values-href-values-a-valores-y-variables"><a id="values" href="#values">#</a> Valores y variables</h3>
 <p>Los <strong>valores</strong> son los componentes más simples en JavaScript. <code>1</code> es un valor, <code>true</code> (que representa un valor lógico de verdad) es un valor, <code>&quot;hola&quot;</code> es un valor, <code>function() {}</code> es un valor, la lista sigue! Existen muchos <strong>tipos</strong> de valores en JavaScript pero no necesitamos conocerlos todos ahora &mdash; los vas a aprender naturalmente mientras más código escribas!</p>
 <p>Para guardar valores usamos cosas llamadas <strong>variables</strong>. La palabra &#39;variable&#39; significa &#39;puede cambiar&#39; y es usado porque las variables pueden guardar distintos tipos de valores y cambiar su valor muchas veces. Las variables son bastante parecidas a un buzón. Ponemos algo en una variable, como una sentencia, y después le damos a la variable una dirección que puede usar para ir a buscar esa sentencia más tarde. En la vida real los buzones necesitan números de código postal pero en JavaScript usualmente se reemplazan con letras en minúscula o números sin espacios.</p>
-<p><img src="images/console-variables.gif" alt="consola"></p>
+<p align="center"><img src="images/console-variables.gif" /></p>
+
 <p><code>var</code> es una abreviatura de variable y el símbolo <code>=</code> significa <em>guarda la cosa del lado derecho en la cosa del lado izquierdo</em>. Además como puedes ver, ahora que estamos guardando nuestra sentencia en una variable la consola no devuelve la sentencia, sino que nos da <code>undefined</code> como respuesta, lo que significa <em>no hay nada para devolver</em>.</p>
 <p>Si simplemente escribes el nombre de una variable en la consola va a imprimir el valor guardado en esa variable. Una nota sobre las variables es que por defecto se pierden cuando cambias a una página diferente. Si fuera a refrescar la página en Chrome, por ejemplo, mi variable <code>sentenciaPerro</code> desaparecería para siempre, como si nunca hubiera existido. Pero no te preocupes por esto demasiado &mdash; puedes apretar las flechas para arriba y abajo en el teclado cuando estás en la consola y obtener las sentencias que fuiste escribiendo últimamente.</p>
 <h3 id="-a-id-functions-href-functions-a-usando-funciones"><a id="functions" href="#functions">#</a> Usando funciones</h3>
 <p>Ahora que tenemos nuestra sentencia guardada en una variable, vamos a cambiar la palabra guardada en ella! Podemos hacer esto creando una <em>función</em>. Las <em>funciones</em> son un tipo de valor que realiza justamente una <em>función</em> específica (También conocido como propósito o acción) por nosotros. Llamarlas &quot;acciones&quot; suena extraño y supongo que por eso eligieron &quot;función&quot; en su lugar.</p>
 <p>JavaScript tiene una función llamada <code>replace</code> (reemplazar en inglés) que hace exactamente lo que queremos! Las funciones toman valores en sus paréntesis (cero, uno o más) y devuelve o bien nada (<code>undefined</code>) o el string modificado. La función <code>replace</code> está disponible para usar sobre cualquier string y toma 2 valores: los caracteres que queremos sacar y los caracteres que los van a reemplazar. Se torna un poco confuso describir estas cosas así que acá tenemos un ejemplo visual:</p>
-<p><img src="images/console-replace.gif" alt="consola"></p>
+<p align="center"><img src="images/console-replace.gif" /></p>
+
 <p>Notas como el valor de <code>sentenciaPerro</code> es el mismo incluso después de correr <code>replace</code> sobre él? Esto se debe a que la función <code>replace</code>, (y la mayoría de funciones de JavaScript para estos propósitos) toman el valor que le damos y retornan un <strong>nuevo valor</strong>, sin modificar el valor que le pasamos. Como no queremos guardar el resultado (no hay <code>=</code> en el lado izquierdo de la operación de reemplazo) se imprime el valor retornado en la consola.</p>
 <h3 id="-a-id-standard-library-href-standard-library-a-funciones-del-lenguaje"><a id="standard-library" href="#standard-library">#</a> Funciones del lenguaje</h3>
 <p>Te debes estar preguntando que otras funciones están disponibles en JavaScript. La respuesta: UN MONTON. Hay muchas <strong>bibliotecas estándar integradas</strong> de las cuales puedes aprender en MDN (Un sitio de Mozilla que tiene mucha y muy buena información sobre tecnologías web). Por ejemplo <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Math">acá está la página de MDN sobre las funciones relativas a la matemática de JavaScript</a>.</p>
 <h3 id="-a-id-third-party-javascript-href-third-party-javascript-a-c-digo-de-terceros"><a id="third-party-javascript" href="#third-party-javascript">#</a> Código de terceros</h3>
 <p>También existe un montón de código JavaScript disponible que no forma parte de la <strong>biblioteca estándar</strong>. Se suele referir al JavaScript escrito por tercero como una &quot;biblioteca&quot; o &quot;plugin&quot;. Uno de mis favoritos se llama <strong>Underscore.js</strong>. Vayamos a buscarlo y cargarlo en nuestra página! Primero ve al sitio de Underscore, <a href="http://underscorejs.org/">http://underscorejs.org/</a>, haz click en el link de descarga (En general uso la versión de desarrollo porque son fáciles de leer pero cualquiera de las 2 te va a dar la misma funcionalidad), y copia todo el código en tu portapapeles (puedes usar <strong>Seleccionar todo</strong> haciendo click derecho). Después pegalo en tu consola y apretá enter. Ahora tu navegador tiene una nueva variable: <code>_</code>. Underscore te da una gran cantidad de funciones útiles para jugar. Vamos a aprender a usarlas más adelante.</p>
-<p><img src="images/underscore.gif" alt="console"></p>
+<p align="center"><img src="images/underscore.gif" /></p>
+
 <h3 id="-a-id-writing-functions-href-writing-functions-a-creando-nuevas-funciones"><a id="writing-functions" href="#writing-functions">#</a> Creando nuevas funciones</h3>
 <p>No estás limitado a usar funciones de otros &mdash; puedes también escribirlas vos. Es muy simple! Hagamos una función llamada <code>ponerleOnda</code> que agregue unos puntos de exclamación al final de un string.</p>
 <pre><code>function ponerleOnda(string) {
   return string + &#39;!!!!&#39;
 }
 </code></pre><p>En mi cabeza lo leo en voz alta como: &quot;hay una función llamada &#39;ponerle onda&#39; que toma un string y devuelve una nueva copia del string que tiene algunos puntos de exclamación al final&quot;. Así es como escribo esto en la consola manualmente sin escribir la función:</p>
-<p><img src="images/custom-function-manually.gif" alt="console"></p>
+<p align="center"><img src="images/custom-function-manually.gif" /></p>
+
 <p>La expresión <code>string + !!!!</code> devuelve un nuevo string y nuestra variable llamada <code>string</code> queda igual que antes (ya que nunca la actualizamos usando <code>=</code>).</p>
 <p>Usemos nuestra función en vez de hacerlo manualmente. Primero, pega la función en la consola y después <strong>llama</strong> a la función <strong>pasandole</strong> un string:</p>
-<p><img src="images/custom-function-call.gif" alt="console"></p>
+<p align="center"><img src="images/custom-function-call.gif" /></p>
+
 <p>Puedes también llamar a la misma función pasandole una variable que apunta a un string (en el ejemplo de arriba escribimos el string directo como un valor en vez de guardarlo como una variable primero):</p>
-<p><img src="images/custom-function-call-variable.gif" alt="console"></p>
+<p align="center"><img src="images/custom-function-call-variable.gif" /></p>
+
 <p>La linea <code>ponerleOnda(sentencia)</code> es equivalente a decir <code>sentencia + &#39;!!!!&#39;</code>. Que pasa si queremos <strong>modificar en el lugar</strong> (conocido como actualizar) el valor de sentencia? Simplemente guarda el valor de retorno de la función en la variable <code>sentencia</code>:</p>
 <pre><code>var sentencia = &quot;hora de la siesta&quot;
 sentencia = ponerleOnda(sentencia)
 </code></pre><p>Ahora <code>sentencia</code> va a tener los signos de exclamación al final! Date cuenta que vos solo usaste <code>var</code> cuando <strong>inicializaste</strong> la variable &mdash; la primera vez que la usaste. Después no deberías usar <code>var</code> a menos que quieras re-inicializar (resetear/limpiar/vaciar) la variable.</p>
 <p>Que pasa si sacamos el <code>return</code> de la función?</p>
-<p><img src="images/custom-function-no-return.gif" alt="console"></p>
+<p align="center"><img src="images/custom-function-no-return.gif" /></p>
+
 <p>Por qué <code>sentencia</code> está vacía? Porque las funciones devuelven <code>undefined</code> por defecto! puedes elegir devolver cualquier valor usando <code>return</code>. Las funciones deben tomar un valor y, si cambian el valor o crean uno nuevo que se va a usar más tarde, <code>devuelven</code> un valor (curiosidad: un término cool para este estilo es <em>programación funcional</em>). Acá tenemos otra función que no devuelve ningún valor pero en cambio usa un método diferente para mostrarnos el resultado:</p>
 <pre><code class="lang-js">function gritalo(string) {
   string = string.toUpperCase()
@@ -103,7 +112,8 @@ sentencia = ponerleOnda(sentencia)
 </code></pre>
 <p>Esta función, <code>gritalo</code>, usa nuestra función <code>ponerleOnda</code> y el método nativo de String <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/toUpperCase">toUpperCase</a>. Los métodos son solo un nombre para una función cuando pertenece a algo &mdash; en este caso <code>toUpperCase</code> es una función que pertenece a <code>String</code> entonces decimos que es un método <em>o</em> una función. <code>ponerleOnda</code> en cambio no pertenece a nadie entonces sería tecnicamente incorrecto referirse a ella como un método (es confuso, lo se).</p>
 <p>La última linea de la función es otra función nativa que simplemente toma valores que le das y los imprime en la consola.</p>
-<p><img src="images/custom-function-console-log.gif" alt="console"></p>
+<p align="center"><img src="images/custom-function-console-log.gif" /></p>
+
 <p>Entonces hay algo mal con esta función <code>gritalo</code>? Depende! Hay 2 tipos principales de funciones:</p>
 <ul>
 <li>Funciones que modifican o crean valores y los retornan</li>
@@ -127,7 +137,8 @@ console.log(gritalo(&quot;no le temo a los humanos&quot;))
 _.times(10, imprimirNumero)
 </code></pre>
 <p>Este código usa el método <a href="http://underscorejs.org/#times">times</a> de Underscore que toma un número y una función, empieza en 0 y durante 10 pasos suma de a 1, llamando a la función con el número en cada paso.</p>
-<p><img src="images/times-loop.png" alt="console"></p>
+<p align="center"><img src="images/times-loop.png" /></p>
+
 <p>Si tuvieramos que hacer manualmente lo que hace <code>times</code> se vería así:</p>
 <pre><code class="lang-js">imprimirNumero(0)
 imprimirNumero(1)
@@ -155,10 +166,12 @@ imprimirNumero(9)
 <p>Para obtener un amigo de tu nuevo array puedes simplemente accederlo directamente así:</p>
 <pre><code class="lang-js">console.log(misAmigosGatos[0])
 </code></pre>
-<p><img src="images/array-access.png" alt="console"></p>
+<p align="center"><img src="images/array-access.png" /></p>
+
 <p>Si hiciste un nuevo amigo en el club gatuno de moda la otra noche y quieres agregarlo a tu lista es super simple: <code>misAmigosGatos.push(&quot;gato de moda&quot;)</code>.</p>
 <p>Para verificar que el nuevo gato está adentro de tu array puedes usar <code>.length</code>:</p>
-<p><img src="images/array-push-length.png" alt="console"></p>
+<p align="center"><img src="images/array-push-length.png" /></p>
+
 <p>Notaste que <code>push</code> devolvió el tamaño? Buenisimo! También toma nota que los arrays siempre <strong>preservan el orden</strong> lo que significa que van a recordar el orden en el que agregaste o definiste las cosas. No todo en JavaScript preserva el orden así que recuerda esta propiedad especial de los Arrays!</p>
 <h3 id="-a-id-objects-href-objects-a-objetos"><a id="objects" href="#objects">#</a> Objetos</h3>
 <p>Los Arrays son buenos para listar, pero para otras tareas puede ser duro trabajar con ellos. Considera nuestro array de amigos felinos. Qué pasa si quieres guardar más que nombres?</p>
@@ -167,14 +180,16 @@ var apellidos = [&quot;el gato&quot;, &quot;gato&quot;, &quot;gato&quot;]
 var direcciones = [&quot;La calle&quot;, &quot;Liniers&quot;, &quot;La casa de John Bonachon&quot;]
 </code></pre>
 <p>A veces es bueno tener todas las direcciones o nombres en una variable. Pero a veces tienes un gato en mente, digamos Felix, y querés buscar su dirección. Con arrays toma todo un trabajo porque no puedes decirle &#39;che array, dame la dirección de Felix&#39; porque &#39;Felix&#39; está en un array y su dirección en otro totalmente diferente.</p>
-<p><img src="images/array-lookup.png" alt="console"></p>
+<p align="center"><img src="images/array-lookup.png" /></p>
+
 <p>Esto puede ser frágil porque nuestro arrays cambian y agregamos un nuevo gato al comienzo podemos también actualizar la variable <code>posicionDeFelix</code> apuntando a la nueva ubicación de la información de Felix en los arreglos! Acá mostramos una forma más fácil de mantener guardada la información usando objetos:</p>
 <pre><code class="lang-js">var primerGato = { nombre: &quot;felix&quot;, apellido: &quot;el gato&quot;, dirección: &quot;La calle&quot; }
 var segundoGato = { nombre: &quot;sessa&quot;, lastName: &quot;gato&quot;, direccion: &quot;Liniers&quot; }
 var tercerGato = { nombre: &quot;garfield&quot;, apellido: &quot;gato&quot;, direccion: &quot;Casa de John Bonachón&quot; }
 </code></pre>
 <p>Por qué lo haríamos de esta manera? Porque ahora tenemos una variable para cada gato que podemos usar a la hora de obtener valores del gato de una manera más conveniente y legible.</p>
-<p><img src="images/object-lookup.png" alt="console"></p>
+<p align="center"><img src="images/object-lookup.png" /></p>
+
 <p>Puedes pensar a los Objetos como llaves de un llavero. Cada una es para una puerta en particular y si tienes lindas etiquetas en tus llaves puedes abrir puertas muy rápidamente. De hecho, las cosas del lado izquierdo del <code>:</code> son llamadas <strong>claves</strong> (también se conocen como <strong>propiedades</strong>) y las cosas del lado derecho se llaman <strong>valores</strong>.</p>
 <pre><code class="lang-js">// un objeto con una sola clave llamada &#39;nombre&#39; y un solo valor &#39;felix&#39;
 { nombre: &#39;felix&#39; }
@@ -241,7 +256,8 @@ medirVelocidadCiclo()
 </code></pre>
 <p>Copia y pega el código de arriba en tu consola de JavaScript y luego de un segundo debería imprimir un número. En mi computadora veo <code>8527360</code>, aproximadamente <strong>8.5 millones</strong>. En un segundo JavaScript puede llamar <code>sumaUno</code> 8.5 millones de veces! Entonces si tienes código síncrono descargando una foto, y la foto tarda un segundo, significa que potencialmente estás previniendo la ejecución de 8.5 millones de operaciones mientras JavaScript está bloqueado.</p>
 <p>Algunos lenguajes tienen una función llamada <code>sleep</code> que bloquea la ejecución por un número de segundos. Por ejemplo acá hay un código de <a href="http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29"><code>bash</code></a> corriendo <code>Terminal.app</code> en Mac OS que usa <code>sleep</code>. Cuando corres el comando <code>sleep 3 &amp;&amp; echo &#39;me desperté&#39;</code> bloquea por 3 segundos antes de imprimir <code>me desperté</code>.</p>
-<p><img src="images/bash-sleep.png" alt="console"></p>
+<p align="center"><img src="images/bash-sleep.png" /></p>
+
 <p>JavaScript no tiene una función <code>sleep</code>. Como sos un gato, seguramente te estás preguntando, &quot;Por qué estoy aprendiendo un lenguaje de programación que no contempla dormir?&quot;. Pero no te vayas. En vez de depender de <code>sleep</code> para esperar a que pasen cosas, el diseño de JavaScript alienta el uso de funciones en su lugar. Si tienes que esperar que finalice la tarea A antes de comenzar la tarea B, pones todo el código de la tarea B en una función y la llamas solo cuando A terminó.</p>
 <p>Por ejemplo, este es código bloqueante:</p>
 <pre><code class="lang-js">a()
@@ -315,6 +331,14 @@ b()
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+  // Service worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+    .register('/sw.js', { scope: '/' })
+    .then(function(registration) {
+    }).catch(function(error) {});
+  }
 </script>
 
 </body>
